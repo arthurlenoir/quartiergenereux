@@ -29,7 +29,7 @@ export const fetchPage = async (pageUri: string) => {
               }
             }
           }
-          page: nodeByUri(uri: "/${pageUri}") {
+          page: nodeByUri(uri: "${pageUri}") {
             id
             isContentNode
             isTermNode

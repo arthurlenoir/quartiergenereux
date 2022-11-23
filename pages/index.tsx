@@ -7,6 +7,6 @@ export default function Home(props: PageProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const props = await fetchPage('');
+  const props = await fetchPage('/');
   return { props };
 }
