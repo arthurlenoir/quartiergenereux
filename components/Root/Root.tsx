@@ -24,7 +24,7 @@ export const Root: React.FC<Props> = ({ children, menu }) => {
 
     const renderMenuItems = useCallback((menuItem: MenuItem) => {
         return <li key={menuItem.id} className={menuItem.uri === asPath || menuItem.uri === `${asPath}/` ? styles.active : undefined}>
-            <a href={menuItem.uri}>{menuItem.label}</a>
+            <a href={menuItem.uri === "/" ? menuItem.uri : menuItem.uri.substring(0, menuItem.uri.length - 1)}>{menuItem.label}</a>
         </li>
     }, [asPath]);
 
