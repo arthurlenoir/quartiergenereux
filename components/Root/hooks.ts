@@ -25,6 +25,6 @@ export const useScrollPercent = (scrollToFullyReduceHeader: number, scrollThresh
         window.addEventListener('scroll', onScroll, false);
         onScroll();
         return () => window.removeEventListener('scroll', onScroll, false);
-    }, []);
+    }, [scrollToFullyReduceHeader, scrollThreshord]);
     return scrollPercent;
 }

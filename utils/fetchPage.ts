@@ -55,9 +55,6 @@ export const fetchPage = async (pageUri: string) => {
         page,
         menus: { nodes: wpMenus }
     } } = await res.json();
-    console.log("===============================")
-    console.log("PAGE", page);
-    console.log("===============================")
     const menu = wpMenus.length > 0 ? parseMenus(wpMenus[0]) : null;
     return { title, description, menu, page: page };
 }

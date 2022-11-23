@@ -8,18 +8,17 @@ import { Menu, parseMenus } from '../types/menu';
 import { Page } from '../types/page';
 import { fetchPage } from '../utils/fetchPage';
 
-interface Props {
+export interface PageProps {
   title: string;
   description: string;
   page: Page;
   menu: Menu | null;
 }
 
-export default function PageView(props: Props) {
+export default function PageView(props: PageProps) {
   const router = useRouter();
   const { pageUri } = router.query;
-  const [{ title, description, menu, page }, setState] = useState<Props>(props);
-  console.log("title", title, menu, page);
+  const [{ title, description, menu, page }, setState] = useState<PageProps>(props);
   useEffect(() => {
     if (!title || !page) {
       fetchPage(pageUri as string).then(r => setState(r));
@@ -77,7 +76,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
   })
   const json = await res.json();
   const pages = json.data.pages.nodes as Page[];
-  console.log("paths", pages.map(page => ({ params: { pageUri: page.slug } })));
   return {
     paths: pages.map(page => ({ params: { pageUri: page.slug, fallback: 'blocking' } })),
     fallback: true
