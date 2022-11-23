@@ -1,0 +1,108 @@
+.container {
+    max-width: 1000px;
+    flex: 1;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.reducedHeader {
+    padding: 10px 0;
+}
+
+.reducedHeader .logo {
+    background-image: url('/quartier-genereux-icon.svg');
+}
+
+.reducedHeader .socialMedia {
+    display: none;
+}
+
+.header .container {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.rightHeader {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.socialMedia {
+    margin: 8px 0;
+}
+
+.socialMedia ul {
+    margin: 0 -8px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.socialMedia ul li {
+    margin: 0 8px;
+}
+
+.mainMenu {
+    margin: 8px 0;
+}
+
+.mainMenu ul {
+    margin: 0 -8px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mainMenu ul li {
+    font-weight: 600;
+    white-space: nowrap;
+    margin: 0 8px;
+}
+
+.mainMenu ul li.active {
+    font-weight: 900;
+}
+
+.logo {
+    background-image: url('/quartier-genereux-logo-couleur.svg');
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.main {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 180px 0 40px;
+    flex: 1;
+}
