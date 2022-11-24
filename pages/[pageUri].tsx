@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react';
 import { Root } from '../components/Root';
 import styles from '../styles/Home.module.css'
-import { Menu, parseMenus } from '../types/menu';
+import { Menu } from '../types/menu';
 import { Page } from '../types/page';
 import { fetchPage } from '../utils/fetchPage';
 
@@ -77,7 +77,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const json = await res.json();
   const pages = json.data.pages.nodes as Page[];
   return {
-    paths: pages.map(page => ({ params: { pageUri: page.slug, fallback: 'blocking' } })),
+    paths: pages.map(page => ({ params: { pageUri: page.slug } })),
     fallback: true
   }
 
