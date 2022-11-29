@@ -3,7 +3,7 @@ import { fetchPage } from '../utils/fetchPage';
 import PageView, { PageProps } from './[pageUri]';
 
 export default function Home(props: PageProps) {
-  return <PageView {...props} />
+  return <PageView {...props} isHomePage />
 }
 
 export const getStaticProps: GetStaticProps = async () => {

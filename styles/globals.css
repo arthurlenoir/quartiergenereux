@@ -24,7 +24,20 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a, a:visited {
+h1 {
+  font-family: 'Raleway';
+  font-weight: 900;
+  font-size: 25pt;
+  color: #36478f;
+  text-align: center;
+}
+
+h1 strong {
+  color: #1cafaf;
+}
+
+a,
+a:visited {
   color: #36478f;
   text-decoration: none;
 }

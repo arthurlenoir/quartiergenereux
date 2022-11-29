@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react';
 import { Footer } from '../components/Footer';
+import { HomePageHeader } from '../components/HomePageHeader';
 import { Root } from '../components/Root';
 import styles from '../styles/Home.module.css'
 import { Menu } from '../types/menu';
@@ -14,17 +15,19 @@ export interface PageProps {
   description: string;
   page: Page;
   menu: Menu | null;
+  isHomePage?: boolean;
 }
 
-export default function PageView(props: PageProps) {
+export default function PageView({ isHomePage, ...props }: PageProps) {
   const router = useRouter();
   const { pageUri } = router.query;
   const [{ title, description, menu, page }, setState] = useState<PageProps>(props);
   useEffect(() => {
-    if (!title || !page) {
+    if (!props.title || !props.page) {
       fetchPage(pageUri as string).then(r => setState(r));
     }
-  })
+  }, [props.title, props.page, pageUri, setState]);
+  
   return (
     <>
       <Head>
@@ -33,8 +36,11 @@ export default function PageView(props: PageProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Root menu={menu}>
-        {page && <><h1 className={styles.title} dangerouslySetInnerHTML={{ __html: page.title }} />
-          <div dangerouslySetInnerHTML={{ __html: page.content }} /></>}
+        {isHomePage && <HomePageHeader />}
+        {page && <>
+          {!isHomePage && <h1 className={styles.title} dangerouslySetInnerHTML={{ __html: page.title }} />}
+          <div dangerouslySetInnerHTML={{ __html: page.content }} />
+        </>}
       </Root>
       <Footer />
     </>
