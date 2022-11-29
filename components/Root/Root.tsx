@@ -39,9 +39,9 @@ export const Root: React.FC<Props> = ({ children, menu }) => {
                 <div className={styles.rightHeader}>
                     <nav className={styles.socialMedia} style={{ margin: `${8 * (1 - scrollPercent)}px 0` }}>
                         <ul>
-                            <li><a href="https://www.facebook.com/qg.montpellier" rel="noreferrer" target="_blank"><FacebookIcon height={28 * (1 - scrollPercent)} /></a></li>
-                            <li><a href="https://www.instagram.com/qg.montpellier" rel="noreferrer" target="_blank"><InstagramIcon height={28 * (1 - scrollPercent)} /></a></li>
-                            <li><a href=" https://t.me/+eLtdeKh7OwJjN2I0" rel="noreferrer" target="_blank"><TelegramIcon height={28 * (1 - scrollPercent)} /></a></li>
+                            <li><a href="https://www.facebook.com/qg.montpellier" aria-label="suivez nous sur Facebook" rel="noreferrer" target="_blank"><FacebookIcon height={28 * (1 - scrollPercent)} /></a></li>
+                            <li><a href="https://www.instagram.com/qg.montpellier" aria-label="suivez nous sur Instagram" rel="noreferrer" target="_blank"><InstagramIcon height={28 * (1 - scrollPercent)} /></a></li>
+                            <li><a href=" https://t.me/+eLtdeKh7OwJjN2I0" aria-label="suivez nous sur Telegram" rel="noreferrer" target="_blank"><TelegramIcon height={28 * (1 - scrollPercent)} /></a></li>
                         </ul>
                     </nav>
                     <nav className={styles.mainMenu}>
