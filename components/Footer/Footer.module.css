@@ -5,17 +5,19 @@
     background-repeat: no-repeat;
     min-height: 400px;
     margin: 48px 0 0;
+    padding: 0 0 48px;
 }
 
 .footerContainer {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    padding: 0 0 32px;
+    flex-wrap: wrap;
 }
 
 .footerSection {
     flex: 1 1 1%;
+    margin: 0 0 48px;
 }
 
 .footerTitle {
@@ -64,6 +66,10 @@
 
 .mapFigure {
     margin: 0;
+}
+
+.mapFigureImage {
+    max-width: 100%;
 }
 
 .contactLink {

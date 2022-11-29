@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
             <div className={styles.footerSection}>
                 <h3 className={styles.footerTitle}>Nous trouver</h3>
                 <figure className={styles.mapFigure}>
-                    <img src="/plan-quartier-genereux.svg" alt="Plan d'accès au Quartier Généreux" />
+                    <img className={styles.mapFigureImage} src="/plan-quartier-genereux.svg" alt="Plan d'accès au Quartier Généreux" />
                 </figure>
             </div>
         </div>
