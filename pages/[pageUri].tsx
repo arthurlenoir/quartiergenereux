@@ -2,6 +2,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react';
+import { Footer } from '../components/Footer';
 import { Root } from '../components/Root';
 import styles from '../styles/Home.module.css'
 import { Menu } from '../types/menu';
@@ -35,6 +36,7 @@ export default function PageView(props: PageProps) {
         {page && <><h1 className={styles.title} dangerouslySetInnerHTML={{ __html: page.title }} />
           <div dangerouslySetInnerHTML={{ __html: page.content }} /></>}
       </Root>
+      <Footer />
     </>
   )
 }

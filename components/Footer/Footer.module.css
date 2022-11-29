@@ -1,0 +1,72 @@
+.footer {
+    background-image: url('/footer-background.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    margin: 48px 0 0;
+}
+
+.footerContainer {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 0 0 32px;
+}
+
+.footerSection {
+    flex: 1 1 1%;
+}
+
+.footerTitle {
+    font-family: LilitaOne;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0 0 32px;
+}
+
+.footerSchedule {
+    list-style-type: none;
+    margin: 0 0 32px;
+    padding: 0 32px 0 0;
+    text-align: right;
+}
+
+.schedule {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0 0 8px;
+}
+
+.scheduleDay {
+    font-variant: small-caps;
+}
+
+.scheduleSep {
+    flex: 1 1 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    margin: 0 8px 2px;
+}
+
+.scheduleHours {
+    font-variant: small-caps;
+}
+
+.scheduleToday {
+    font-weight: bold;
+    color: #36478f;
+}
+
+.scheduleToday .scheduleSep {
+    border-bottom-color: #36478f;
+}
+
+.mapFigure {
+    margin: 0;
+}
+
+.contactLink {
+    display: block;
+    margin: 0 0 8px;
+}

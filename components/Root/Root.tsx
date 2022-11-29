@@ -39,9 +39,8 @@ export const Root: React.FC<Props> = ({ children, menu }) => {
                 <div className={styles.rightHeader}>
                     <nav className={styles.socialMedia}>
                         <ul>
-                            <li><a href="#"><FacebookIcon height={28} /></a></li>
-                            <li><a href="#"><TwitterIcon height={28} /></a></li>
-                            <li><a href="#"><InstagramIcon height={28} /></a></li>
+                            <li><a href="https://www.facebook.com/qg.montpellier" target="_blank"><FacebookIcon height={28} /></a></li>
+                            <li><a href="https://www.instagram.com/qg.montpellier" target="_blank"><InstagramIcon height={28} /></a></li>
                             <li><a href=" https://t.me/+eLtdeKh7OwJjN2I0" target="_blank"><TelegramIcon height={28} /></a></li>
                         </ul>
                     </nav>
