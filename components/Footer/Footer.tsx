@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
             setToday(new Date());
             window.setTimeout(updateDate, 3600);
         };
-        window.setTimeout(updateDate, 3600);
+        updateDate();
     }, [setToday]);
 
     return <footer className={styles.footer}>
