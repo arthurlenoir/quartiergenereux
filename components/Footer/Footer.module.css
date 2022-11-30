@@ -1,11 +1,11 @@
 .footer {
-    background-image: url('/footer-background.webp');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-image: url('/footer-background.webp'), url('/footer-pattern.webp');
+    background-size: cover,auto;
+    background-position: center center, top left;
+    background-repeat: no-repeat, repeat;
     min-height: 400px;
-    margin: 48px 0 0;
-    padding: 0 0 48px;
+    margin: 16px 0 0;
+    padding: 32px 0 48px;
 }
 
 .footerContainer {
@@ -65,7 +65,7 @@
 }
 
 .mapFigure {
-    margin: 0;
+    margin: -40px 0 0;
     min-width: 200px;
 }
 
