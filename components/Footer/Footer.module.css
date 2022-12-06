@@ -1,6 +1,6 @@
 .footer {
     background-image: url('/footer-background.webp'), url('/footer-pattern.webp');
-    background-size: cover,auto;
+    background-size: cover, auto;
     background-position: center center, top left;
     background-repeat: no-repeat, repeat;
     min-height: 400px;
@@ -69,6 +69,8 @@
 .mapFigure {
     margin: -40px 0 0;
     min-width: 200px;
+    height: 100%;
+    position: relative;
 }
 
 .mapFigureImage {

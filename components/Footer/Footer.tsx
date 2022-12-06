@@ -5,6 +5,7 @@ import rootStyles from "../Root/Root.module.css";
 import { FacebookIcon } from "../Icons/FacebookIcon";
 import { InstagramIcon } from "../Icons/InstagramIcon";
 import { TelegramIcon } from "../Icons/TelegramIcon";
+import Image from "next/image";
 
 enum DAYS {
     MONDAY = 1,
@@ -80,7 +81,7 @@ export const Footer: React.FC = () => {
             <div className={styles.footerSection}>
                 <h2 className={styles.footerTitle}>Nous trouver</h2>
                 <figure className={styles.mapFigure}>
-                    <img className={styles.mapFigureImage} src="/plan-quartier-genereux.svg" alt="Plan d'accès au Quartier Généreux" />
+                    <Image className={styles.mapFigureImage} src="/plan-quartier-genereux.svg" fill alt="Plan d'accès au Quartier Généreux" />
                 </figure>
             </div>
         </div>
