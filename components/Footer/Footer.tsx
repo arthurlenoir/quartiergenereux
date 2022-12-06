@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
     return <footer className={styles.footer}>
         <div className={`${rootStyles.container} ${styles.footerContainer}`}>
             <div className={styles.footerSection}>
-                <h3 className={styles.footerTitle}>Horaires d&apos;ouverture</h3>
+                <h2 className={styles.footerTitle}>Horaires d&apos;ouverture</h2>
                 <ul className={styles.footerSchedule}>
                     <li className={`${styles.schedule} ${day === DAYS.MONDAY ? styles.scheduleToday : ''}`}>
                         <span className={styles.scheduleDay}>lundi</span>
@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
                     </li>
                 </ul>
 
-                <h3 className={styles.footerTitle}>Nous contacter</h3>
+                <h2 className={styles.footerTitle}>Nous contacter</h2>
                 <address>
                     <a href="mailto:contact@quartiergenereux.fr" className={styles.contactLink}>contact@quartiergenereux.fr</a>
                     <a href="https://www.google.fr/maps/place/Quartier+G%C3%A9n%C3%A9reux/@43.6159593,3.8725947,17z/data=!3m1!4b1!4m5!3m4!1s0x12b6af3f476bf623:0x1e15ffecd0c43d07!8m2!3d43.6159593!4d3.8747834?shorturl=1" rel="noreferrer" target="_blank" className={styles.contactLink}>
@@ -78,7 +78,7 @@ export const Footer: React.FC = () => {
                 </address>
             </div>
             <div className={styles.footerSection}>
-                <h3 className={styles.footerTitle}>Nous trouver</h3>
+                <h2 className={styles.footerTitle}>Nous trouver</h2>
                 <figure className={styles.mapFigure}>
                     <img className={styles.mapFigureImage} src="/plan-quartier-genereux.svg" alt="Plan d'accès au Quartier Généreux" />
                 </figure>
