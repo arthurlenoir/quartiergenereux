@@ -4,7 +4,7 @@
   font-weight: 400;
   src: url('/LilitaOne-Regular.ttf') format('ttf'),
     url('/LilitaOne-Regular.woff2') format('woff2');
-  
+
   font-display: swap;
 }
 
@@ -17,14 +17,28 @@
   font-display: swap;
 }
 
+:root {
+  --font-color: #000;
+  --link-color: #36478f;
+  --bg-color: #fff;
+}
+
+[data-theme="dark"] {
+  --font-color: #000;
+  --link-color: #36478f;
+  --bg-color: rgb(243, 243, 243);
+}
+
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-size: 12pt;
-  background-color: white;
-  color: black;
+  color: #000;
+  color: var(--font-color);
+  background: rgb(243, 243, 243);
+  background: var(--bg-color);
   font-family: Raleway, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
