@@ -27,7 +27,6 @@ export default function PageView({ isHomePage, ...props }: PageProps) {
       fetchPage(pageUri as string).then(r => setState(r));
     }
   }, [props.title, props.page, pageUri, setState]);
-  console.log("page", page);
 
   return (
     <>
@@ -38,7 +37,7 @@ export default function PageView({ isHomePage, ...props }: PageProps) {
         <meta property="og:title" content={title} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`https://quartiergenereux.fr/${pageUri || ""}`} />
-        {page.featuredImage?.node?.mediaItemUrl && <meta property="og:image" content={page.featuredImage.node.mediaItemUrl} />}
+        {page?.featuredImage?.node?.mediaItemUrl && <meta property="og:image" content={page.featuredImage.node.mediaItemUrl} />}
       </Head>
       <Root menu={menu}>
         {isHomePage && <HomePageHeader />}
