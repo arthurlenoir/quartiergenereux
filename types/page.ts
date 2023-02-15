@@ -1,3 +1,15 @@
+export type FeaturedImage = {
+    altText?: string,
+    caption?: string,
+    description?: string,
+    mediaItemUrl: string,
+    mediaType: string,
+}
+
+export type FeaturedImageNode = {
+    node: FeaturedImage,
+};
+
 export type Page = {
     id: string,
     isContentNode: boolean,
@@ -7,4 +19,5 @@ export type Page = {
     status: string,
     title: string,
     content: string,
+    featuredImage?: FeaturedImageNode,
 }

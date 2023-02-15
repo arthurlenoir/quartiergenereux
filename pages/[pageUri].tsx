@@ -27,13 +27,18 @@ export default function PageView({ isHomePage, ...props }: PageProps) {
       fetchPage(pageUri as string).then(r => setState(r));
     }
   }, [props.title, props.page, pageUri, setState]);
-  
+  console.log("page", page);
+
   return (
     <>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content={title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://quartiergenereux.fr/${pageUri || ""}`} />
+        {page.featuredImage?.node?.mediaItemUrl && <meta property="og:image" content={page.featuredImage.node.mediaItemUrl} />}
       </Head>
       <Root menu={menu}>
         {isHomePage && <HomePageHeader />}

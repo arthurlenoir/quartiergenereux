@@ -41,6 +41,15 @@ export const fetchPage = async (pageUri: string) => {
               title(format: RENDERED)
               uri
               content(format: RENDERED)
+              featuredImage {
+                node {
+                  altText
+                  caption
+                  description(format: RENDERED)
+                  mediaItemUrl
+                  mediaType
+                }
+              }
             }
             ... on Post {
               id
