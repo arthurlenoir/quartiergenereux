@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import styles from "./Footer.module.css";
 import rootStyles from "../Root/Root.module.css";
-import { FacebookIcon } from "../Icons/FacebookIcon";
-import { InstagramIcon } from "../Icons/InstagramIcon";
-import { TelegramIcon } from "../Icons/TelegramIcon";
 import Image from "next/image";
 
 enum DAYS {
@@ -47,22 +44,22 @@ export const Footer: React.FC = () => {
                     <li className={`${styles.schedule} ${day === DAYS.WEDNESDAY ? styles.scheduleToday : ''}`}>
                         <span className={styles.scheduleDay}>mercredi</span>
                         <span className={styles.scheduleSep} />
-                        <span className={styles.scheduleHours}><div>8h - 14h</div><div>17h - 23h</div></span>
+                        <span className={styles.scheduleHours}>9h - 1h</span>
                     </li>
                     <li className={`${styles.schedule} ${day === DAYS.THURSDAY ? styles.scheduleToday : ''}`}>
                         <span className={styles.scheduleDay}>jeudi</span>
                         <span className={styles.scheduleSep} />
-                        <span className={styles.scheduleHours}>17h - 23h</span>
+                        <span className={styles.scheduleHours}>17h30 - 1h</span>
                     </li>
                     <li className={`${styles.schedule} ${day === DAYS.FRIDAY ? styles.scheduleToday : ''}`}>
                         <span className={styles.scheduleDay}>vendredi</span>
                         <span className={styles.scheduleSep} />
-                        <span className={styles.scheduleHours}>17h - 1h</span>
+                        <span className={styles.scheduleHours}>17h30 - 1h</span>
                     </li>
                     <li className={`${styles.schedule} ${day === DAYS.SATURDAY ? styles.scheduleToday : ''}`}>
                         <span className={styles.scheduleDay}>samedi</span>
                         <span className={styles.scheduleSep} />
-                        <span className={styles.scheduleHours}>17h - 1h</span>
+                        <span className={styles.scheduleHours}>17h30 - 1h</span>
                     </li>
                     <li className={`${styles.schedule} ${day === DAYS.SUNDAY ? styles.scheduleToday : ''}`}>
                         <span className={styles.scheduleDay}>dimanche</span>
