@@ -53,6 +53,11 @@
     margin: 0 0 4px;
 }
 
+.eventContent {
+    display: flex;
+    flex-direction: column;
+}
+
 .eventTitle {
     font-weight: bold;
     margin: 0 0 4px;
@@ -64,4 +69,8 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+}
+
+.eventTime {
+    margin: 4px 0;
 }
