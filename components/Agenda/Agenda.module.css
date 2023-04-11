@@ -1,0 +1,67 @@
+.agenda {
+    display: flex;
+    justify-content: center;
+    margin: -8px;
+    flex-wrap: wrap;
+}
+
+.event {
+    margin: 0px 8px 16px;
+    padding: 16px 0;
+    min-width: 300px;
+    color: inherit;
+    text-decoration: none;
+    flex: 1 1 40%;
+    display: flex;
+}
+
+.eventDate {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--tertiary);
+    background-color: var(--tertiary-light);
+    border-radius: 8px;
+    margin: 0 16px 0;
+    padding: 8px;
+    text-align: center;
+    height: 96px;
+    width: 96px;
+    flex: 0 0 96px;
+}
+
+.eventDateWeekday {
+    color: var(--tertiary);
+    font-variant: small-caps;
+    font-weight: bold;
+    margin: 0;
+}
+
+.eventDateDay {
+    margin: 0 0 4px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 25pt;
+    color: var(--primary);
+    line-height: 0.8em;
+}
+
+.eventDateMonth {
+    color: var(--tertiary);
+    font-variant: small-caps;
+    font-weight: bold;
+    margin: 0 0 4px;
+}
+
+.eventTitle {
+    font-weight: bold;
+    margin: 0 0 4px;
+}
+
+.eventDescription {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

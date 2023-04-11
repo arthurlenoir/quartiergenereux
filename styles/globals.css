@@ -21,6 +21,10 @@
   --font-color: #000;
   --link-color: #36478f;
   --bg-color: #fff;
+  --primary: #36478f;
+  --secondary: #c3e8e5;
+  --tertiary: #eb7748;
+  --tertiary-light: #fff1e8;
 }
 
 [data-theme="dark"] {

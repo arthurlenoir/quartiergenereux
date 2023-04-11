@@ -15,16 +15,15 @@ enum DAYS {
 }
 
 export const Footer: React.FC = () => {
-    const [today, setToday] = useState(new Date());
-    const day = today.getDay();
+    const [day, setDay] = useState<number>(new Date().getDay());
 
     useEffect(() => {
         const updateDate = () => {
-            setToday(new Date());
+            setDay(new Date().getDay());
             window.setTimeout(updateDate, 3600);
         };
         updateDate();
-    }, [setToday]);
+    }, [setDay]);
 
     return <footer className={styles.footer}>
         <div className={`${rootStyles.container} ${styles.footerContainer}`}>
