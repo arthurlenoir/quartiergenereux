@@ -4,7 +4,7 @@ import { Footer } from '../components/Footer';
 import { Root } from '../components/Root';
 import { Menu } from '../types/menu';
 import { fetchMenu } from '../utils/fetchMenu';
-import { Agenda } from '../components/Agenda';
+import { GoogleAgenda } from '../components/Agenda';
 
 export interface PageProps {
     menu: Menu | null;
@@ -21,7 +21,7 @@ export default function AgendaPage({ menu }: PageProps) {
             </Head>
             <Root menu={menu}>
                 <h1>Agenda</h1>
-                <Agenda />
+                <GoogleAgenda calendarId='1a765f00b1b3157f7f659f5d0f7343cc9b27d1ece10523108b5adf9ff5f98c82@group.calendar.google.com' />
             </Root>
             <Footer />
         </>
