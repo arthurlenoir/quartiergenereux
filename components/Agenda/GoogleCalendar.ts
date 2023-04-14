@@ -1,4 +1,4 @@
-import { CalendarItem } from "./types";
+import { CalendarItem, Period } from "./types";
 
 declare global {
   interface Window {
@@ -70,6 +70,18 @@ export const listUpcomingEvents = (calendarId: string, limit: number) => {
     maxResults: limit,
     orderBy: "startTime",
     timeMin: getToday().toISOString(),
+  });
+};
+
+export const listEventsFromPeriod = (calendarId: string, period: Period, limit: number) => {
+  return window.gapi.client.calendar.events.list({
+    calendarId,
+    showDeleted: false,
+    singleEvents: true,
+    maxResults: limit,
+    orderBy: "startTime",
+    timeMin: period.from.toISOString(),
+    timeMax: period.to.toISOString()
   });
 };
 

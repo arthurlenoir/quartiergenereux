@@ -9,6 +9,8 @@ import styles from '../styles/Home.module.css'
 import { Menu } from '../types/menu';
 import { Page } from '../types/page';
 import { fetchPage } from '../utils/fetchPage';
+import { GoogleAgenda } from '../components/Agenda';
+import { GoogleAgendaPreview } from '../components/Agenda/GoogleAgendaPreview';
 
 export interface PageProps {
   title: string;
@@ -41,6 +43,7 @@ export default function PageView({ isHomePage, ...props }: PageProps) {
       </Head>
       <Root menu={menu}>
         {isHomePage && <HomePageHeader />}
+        {isHomePage && <GoogleAgendaPreview calendarId='1a765f00b1b3157f7f659f5d0f7343cc9b27d1ece10523108b5adf9ff5f98c82@group.calendar.google.com' />}
         {page && <>
           {!isHomePage && <h1 className={styles.title} dangerouslySetInnerHTML={{ __html: page.title }} />}
           <div dangerouslySetInnerHTML={{ __html: page.content }} />

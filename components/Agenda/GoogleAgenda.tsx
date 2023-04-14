@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
-import { CalendarItem } from "./types";
-import { listUpcomingEvents, loadGoogleApi } from "./GoogleCalendar";
+import { CalendarItem, Period } from "./types";
+import { listEventsFromPeriod, listUpcomingEvents, loadGoogleApi } from "./GoogleCalendar";
 import GoogleAgendaEvent from "./GoogleAgendaEvent";
 
 import styles from "./Agenda.module.css";
@@ -11,20 +11,22 @@ interface Props {
     calendarId: string;
     limit?: number;
     preview?: boolean;
+    period?: Period;
 }
 
 export const GoogleAgenda: React.FC<Props> = ({
     calendarId,
     preview = false,
+    period,
     limit = 100,
 }) => {
     const [events, setEvents] = useState<CalendarItem[]>();
     useEffect(() => {
         loadGoogleApi(API_KEY).then(async () => {
-            const calendarEvents = await listUpcomingEvents(calendarId, limit);
+            const calendarEvents = await (period ? listEventsFromPeriod(calendarId, period, limit) : listUpcomingEvents(calendarId, limit));
             setEvents(calendarEvents.result.items);
         });
-    }, [setEvents, calendarId, limit]);
+    }, [setEvents, calendarId, limit, period]);
 
     const renderCalendarEvent = useCallback(
         (event: CalendarItem) => (

@@ -21,7 +21,7 @@ export const HomePageHeader: React.FC = () => {
         <div className={styles.headerPlaceholder} style={{ height: `${headerHeight}px` }} />
         <h1 className={styles.title}>
             <CupIcon style={{ marginRight: 16, marginBottom: -12 }} />
-            Votre futur <strong>café de quartier</strong>
+            Votre café de quartier
         </h1>
     </>
 }

@@ -11,3 +11,8 @@ export interface CalendarItem {
     start: CalendarTime;
     status: string;
 }
+
+export interface Period {
+    from: Date;
+    to: Date;
+}
