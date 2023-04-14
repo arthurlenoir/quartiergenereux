@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { GoogleAgenda } from "./GoogleAgenda";
 import { Period } from "./types";
+import Link from "next/link";
+
+import styles from "./Agenda.module.css";
 
 interface Props {
     calendarId: string;
@@ -23,7 +26,8 @@ const getNextWeekPeriod = (): Period => {
 export const GoogleAgendaPreview: React.FC<Props> = ({ calendarId }) => {
     const period = getNextWeekPeriod();
     return <>
-        <h2>Prochainement au Quartier Généreux</h2>
+        <h2 className={styles.agendaTitle}>Prochainement au Quartier Généreux</h2>
         <GoogleAgenda calendarId={calendarId} period={period} preview />
+        <div className={styles.agendaFooter}><Link href="/agenda/" className={styles.linkButton}>Voir plus d&apos;événements</Link></div>
     </>
 }

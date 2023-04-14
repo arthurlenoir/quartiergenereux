@@ -74,3 +74,20 @@
 .eventTime {
     margin: 4px 0;
 }
+
+.agendaFooter {
+    text-align: center;
+    margin: 16px 0 64px;
+}
+
+.linkButton {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 8px 16px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.agendaTitle {
+    margin: 32px 0 24px;
+}
