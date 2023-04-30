@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 
 import styles from "./Footer.module.css";
 import rootStyles from "../Root/Root.module.css";
@@ -17,7 +17,7 @@ enum DAYS {
 export const Footer: React.FC = () => {
     const [day, setDay] = useState<number>(new Date().getDay());
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const updateDate = () => {
             setDay(new Date().getDay());
             window.setTimeout(updateDate, 3600);
