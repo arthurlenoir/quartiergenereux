@@ -11,7 +11,7 @@ enum DAYS {
     THURSDAY = 4,
     FRIDAY = 5,
     SATURDAY = 6,
-    SUNDAY = 7,
+    SUNDAY = 0,
 }
 
 export const Footer: React.FC = () => {
