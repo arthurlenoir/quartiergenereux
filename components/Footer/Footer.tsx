@@ -20,9 +20,10 @@ export const Footer: React.FC = () => {
     useLayoutEffect(() => {
         const updateDate = () => {
             setDay(new Date().getDay());
+            console.log("set date", new Date().getDay())
             window.setTimeout(updateDate, 3600);
         };
-        updateDate();
+        window.setTimeout(updateDate, 1);
     }, [setDay]);
 
     return <footer className={styles.footer}>
