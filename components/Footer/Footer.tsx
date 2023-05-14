@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import styles from "./Footer.module.css";
 import rootStyles from "../Root/Root.module.css";
@@ -14,16 +14,23 @@ enum DAYS {
     SUNDAY = 0,
 }
 
+const getTime = async () => {
+    const res = await fetch('http://worldtimeapi.org/api/timezone/Europe/Paris');
+    const data = await res.json();
+    return new Date(data.datetime);
+}
+
 export const Footer: React.FC = () => {
     const [day, setDay] = useState<number>(new Date().getDay());
 
-    useLayoutEffect(() => {
-        const updateDate = () => {
-            setDay(new Date().getDay());
-            console.log("set date", new Date().getDay())
-            window.setTimeout(updateDate, 3600);
+    useEffect(() => {
+        const updateDate = async () => {
+            const now = await getTime();
+            setDay(now.getDay());
+            console.log("set date", now)
+            window.setTimeout(updateDate, 3600000);
         };
-        window.setTimeout(updateDate, 1);
+        updateDate();
     }, [setDay]);
 
     return <footer className={styles.footer}>
@@ -44,7 +51,7 @@ export const Footer: React.FC = () => {
                     <li className={`${styles.schedule} ${day === DAYS.WEDNESDAY ? styles.scheduleToday : ''}`}>
                         <span className={styles.scheduleDay}>mercredi</span>
                         <span className={styles.scheduleSep} />
-                        <span className={styles.scheduleHours}>9h - 1h</span>
+                        <span className={styles.scheduleHours}>9h - 22h</span>
                     </li>
                     <li className={`${styles.schedule} ${day === DAYS.THURSDAY ? styles.scheduleToday : ''}`}>
                         <span className={styles.scheduleDay}>jeudi</span>
