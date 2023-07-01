@@ -112,3 +112,27 @@ a:hover {
     background: var(--bg-color);
   }
 }
+
+.is-content-justification-center {
+  text-align: center;
+}
+
+.is-layout-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wp-block-button {
+  background-color: #36478f;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.wp-block-button__link {
+  color: inherit;
+  padding: 12px 24px;
+  margin: -12px -24px;
+}
