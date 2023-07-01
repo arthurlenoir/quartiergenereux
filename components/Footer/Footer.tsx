@@ -15,7 +15,7 @@ enum DAYS {
 }
 
 const getTime = async () => {
-    const res = await fetch('http://worldtimeapi.org/api/timezone/Europe/Paris');
+    const res = await fetch('https://worldtimeapi.org/api/timezone/Europe/Paris');
     const data = await res.json();
     return new Date(data.datetime);
 }
@@ -25,9 +25,16 @@ export const Footer: React.FC = () => {
 
     useEffect(() => {
         const updateDate = async () => {
-            const now = await getTime();
-            setDay(now.getDay());
-            console.log("set date", now)
+            try {
+                const now = await getTime();
+                setDay(now.getDay());
+                console.log("set date", now)
+            }
+            catch (e) {
+                console.log('error', e)
+                console.log('setDay', new Date().getDay())
+                setDay(new Date().getDay());
+            }
             window.setTimeout(updateDate, 3600000);
         };
         updateDate();
