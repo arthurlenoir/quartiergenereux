@@ -29,9 +29,9 @@ export const GoogleAgenda: React.FC<Props> = ({
     }, [setEvents, calendarId, limit, period]);
 
     const renderCalendarEvent = useCallback(
-        (event: CalendarItem) => (
+        (event: CalendarItem, i: number) => (
             <GoogleAgendaEvent
-                key={event.start.dateTime}
+                key={i}
                 event={event}
                 preview={preview}
             />

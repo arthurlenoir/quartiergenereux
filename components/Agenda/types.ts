@@ -1,18 +1,19 @@
 export interface CalendarTime {
-    dateTime: string;
-    timeZone?: string;
+  dateTime?: string;
+  date: string;
+  timeZone?: string;
 }
 
 export interface CalendarItem {
-    description: string;
-    summary: string;
-    location: string;
-    end: CalendarTime;
-    start: CalendarTime;
-    status: string;
+  description: string;
+  summary: string;
+  location: string;
+  end: CalendarTime;
+  start: CalendarTime;
+  status: string;
 }
 
 export interface Period {
-    from: Date;
-    to: Date;
+  from: Date;
+  to: Date;
 }
