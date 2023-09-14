@@ -63,17 +63,17 @@ export const Footer: React.FC = () => {
                     <li className={`${styles.schedule} ${day === DAYS.THURSDAY ? styles.scheduleToday : ''}`}>
                         <span className={styles.scheduleDay}>jeudi</span>
                         <span className={styles.scheduleSep} />
-                        <span className={styles.scheduleHours}>17h30 - 1h</span>
+                        <span className={styles.scheduleHours}>18h - 23h</span>
                     </li>
                     <li className={`${styles.schedule} ${day === DAYS.FRIDAY ? styles.scheduleToday : ''}`}>
                         <span className={styles.scheduleDay}>vendredi</span>
                         <span className={styles.scheduleSep} />
-                        <span className={styles.scheduleHours}>17h30 - 1h</span>
+                        <span className={styles.scheduleHours}>18h - 23h</span>
                     </li>
                     <li className={`${styles.schedule} ${day === DAYS.SATURDAY ? styles.scheduleToday : ''}`}>
                         <span className={styles.scheduleDay}>samedi</span>
                         <span className={styles.scheduleSep} />
-                        <span className={styles.scheduleHours}>17h30 - 1h</span>
+                        <span className={styles.scheduleHours}>18h - 23h</span>
                     </li>
                     <li className={`${styles.schedule} ${day === DAYS.SUNDAY ? styles.scheduleToday : ''}`}>
                         <span className={styles.scheduleDay}>dimanche</span>
