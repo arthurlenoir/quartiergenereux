@@ -1,19 +1,19 @@
 @font-face {
-  font-family: 'LilitaOne';
+  font-family: "LilitaOne";
   font-style: normal;
   font-weight: 400;
-  src: url('/LilitaOne-Regular.ttf') format('ttf'),
-    url('/LilitaOne-Regular.woff2') format('woff2');
+  src: url("/LilitaOne-Regular.ttf") format("ttf"),
+    url("/LilitaOne-Regular.woff2") format("woff2");
 
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 100 900;
-  src: url('/Raleway-VariableFont_wght.ttf') format('ttf'),
-    url('/Raleway-VariableFont_wght.woff2') format('woff2');
+  src: url("/Raleway-VariableFont_wght.ttf") format("ttf"),
+    url("/Raleway-VariableFont_wght.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -33,7 +33,6 @@
   --bg-color: rgb(243, 243, 243);
 }
 
-
 html,
 body {
   padding: 0;
@@ -43,16 +42,29 @@ body {
   color: var(--font-color);
   background: rgb(243, 243, 243);
   background: var(--bg-color);
-  font-family: Raleway, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Raleway, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 h1 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 900;
   font-size: 25pt;
   color: #36478f;
   text-align: center;
+}
+
+h2 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 22pt;
+  color: var(--tertiary);
+  text-align: center;
+}
+
+h1 + h2 {
+  margin-top: -16px;
+  margin-bottom: 40px;
 }
 
 h1 strong {
@@ -136,6 +148,7 @@ a:hover {
   padding: 12px 24px;
   margin: -12px -24px;
 }
-a.wp-block-button__link, a.wp-block-button__link:visited {
+a.wp-block-button__link,
+a.wp-block-button__link:visited {
   color: inherit;
 }

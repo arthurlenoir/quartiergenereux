@@ -67,8 +67,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+}
+
+.eventFullDescription {
+    font-size: 18px;
+    margin-bottom: 48px;
 }
 
 .eventTime {
@@ -86,6 +91,13 @@
     padding: 8px 16px;
     border-radius: 3px;
     font-weight: bold;
+}
+
+.smallLink, .smallLink:visited {
+    color: var(--primary);
+    margin: 0;
+    padding: 4px 0;
+    font-weight: 500;
 }
 
 .agendaTitle {

@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useCallback } from "react";
 
 import styles from "./Agenda.module.css";
 import { CalendarItem } from "./types";
 import { getDayLabel, getShortMonthLabel } from "../../utils/days";
+import { useRouter } from "next/router";
+import {
+  dateRenderOptions,
+  localTime,
+  timeRenderOptions,
+} from "./dateRenderOptions";
+import Link from "next/link";
 
 interface Props {
   event: CalendarItem;
@@ -10,19 +17,17 @@ interface Props {
   link?: string;
 }
 
-const localTime = "fr-FR";
-const dateRenderOptions: Intl.DateTimeFormatOptions = { day: "2-digit" };
-const timeRenderOptions: Intl.DateTimeFormatOptions = {
-  hour: "2-digit",
-  minute: "2-digit",
-};
-
 const CalendarEvent: React.FC<Props> = ({ event, link, preview = false }) => {
+  const { push } = useRouter();
   const start = new Date(Date.parse(event.start.dateTime ?? event.start.date));
   const end = new Date(Date.parse(event.end.dateTime ?? event.end.date));
 
+  const navigateToEvent = useCallback(() => {
+    push(`/agenda/event?eventId=${event.id}`);
+  }, [event.id, push]);
+
   return (
-    <div className={styles.event}>
+    <div className={styles.event} onClick={navigateToEvent}>
       <div className={styles.eventDate}>
         <div className={styles.eventDateWeekday}>{getDayLabel(start)}</div>
         <div className={styles.eventDateDay}>
@@ -36,6 +41,12 @@ const CalendarEvent: React.FC<Props> = ({ event, link, preview = false }) => {
           className={styles.eventDescription}
           dangerouslySetInnerHTML={{ __html: event.description }}
         />
+        <Link
+          href={`/agenda/event?eventId=${event.id}`}
+          className={styles.smallLink}
+        >
+          plus d&apos;infos
+        </Link>
         <div className={styles.eventTime}>
           {start.toLocaleTimeString(localTime, timeRenderOptions)} -{" "}
           {end.toLocaleTimeString(localTime, timeRenderOptions)}

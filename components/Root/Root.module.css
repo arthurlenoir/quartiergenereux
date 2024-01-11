@@ -103,7 +103,7 @@
 
 .main {
   box-sizing: border-box;
-  min-height: 100vh;
+  min-height: calc(100vh - 524px);
   padding: 180px 0 40px;
   flex: 1;
 }

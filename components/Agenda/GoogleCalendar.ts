@@ -20,6 +20,7 @@ declare global {
         calendar: {
           events: {
             list: (request: unknown) => Promise<CalendarEvents>;
+            get: (request: unknown) => Promise<CalendarEvent>;
           };
         };
       };
@@ -29,6 +30,10 @@ declare global {
 
 interface CalendarEvents {
   result: CalendarEventsResult;
+}
+
+interface CalendarEvent {
+  result: CalendarItem;
 }
 
 interface CalendarEventsResult {
@@ -73,7 +78,11 @@ export const listUpcomingEvents = (calendarId: string, limit: number) => {
   });
 };
 
-export const listEventsFromPeriod = (calendarId: string, period: Period, limit: number) => {
+export const listEventsFromPeriod = (
+  calendarId: string,
+  period: Period,
+  limit: number
+) => {
   return window.gapi.client.calendar.events.list({
     calendarId,
     showDeleted: false,
@@ -81,7 +90,14 @@ export const listEventsFromPeriod = (calendarId: string, period: Period, limit: 
     maxResults: limit,
     orderBy: "startTime",
     timeMin: period.from.toISOString(),
-    timeMax: period.to.toISOString()
+    timeMax: period.to.toISOString(),
+  });
+};
+
+export const getEvent = (calendarId: string, eventId: string) => {
+  return window.gapi.client.calendar.events.get({
+    calendarId,
+    eventId,
   });
 };
 
