@@ -13,6 +13,7 @@
     text-decoration: none;
     flex: 1 1 40%;
     display: flex;
+    gap: 16px;
 }
 
 .eventDate {
@@ -22,7 +23,7 @@
     border: 1px solid var(--tertiary);
     background-color: var(--tertiary-light);
     border-radius: 8px;
-    margin: 0 16px 0;
+    margin: 0;
     padding: 8px;
     text-align: center;
     height: 96px;
@@ -56,6 +57,8 @@
 .eventContent {
     display: flex;
     flex-direction: column;
+    flex: 1 1 auto;
+    max-width: calc(100% - 112px);
 }
 
 .eventTitle {

@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@piwikpro/next-piwik-pro": "^2.0.0",
+    "@piwikpro/next-piwik-pro": "^2.1.1",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
