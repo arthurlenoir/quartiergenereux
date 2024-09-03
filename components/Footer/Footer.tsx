@@ -67,8 +67,7 @@ export const Footer: React.FC = () => {
             >
               <span className={styles.scheduleDay}>mercredi</span>
               <span className={styles.scheduleSep} />
-              {/*<span className={styles.scheduleHours}>9h - 22h</span>*/}
-              <span className={styles.scheduleHours}>fermé</span>
+              <span className={styles.scheduleHours}>9h - 22h</span>
             </li>
             <li
               className={`${styles.schedule} ${
@@ -77,8 +76,7 @@ export const Footer: React.FC = () => {
             >
               <span className={styles.scheduleDay}>jeudi</span>
               <span className={styles.scheduleSep} />
-              {/*<span className={styles.scheduleHours}>18h - 23h</span>*/}
-              <span className={styles.scheduleHours}>fermé</span>
+              <span className={styles.scheduleHours}>18h - 23h</span>
             </li>
             <li
               className={`${styles.schedule} ${
@@ -87,8 +85,7 @@ export const Footer: React.FC = () => {
             >
               <span className={styles.scheduleDay}>vendredi</span>
               <span className={styles.scheduleSep} />
-              {/*<span className={styles.scheduleHours}>18h - 23h</span>*/}
-              <span className={styles.scheduleHours}>fermé</span>
+              <span className={styles.scheduleHours}>18h - 23h</span>
             </li>
             <li
               className={`${styles.schedule} ${
@@ -97,8 +94,7 @@ export const Footer: React.FC = () => {
             >
               <span className={styles.scheduleDay}>samedi</span>
               <span className={styles.scheduleSep} />
-              {/*<span className={styles.scheduleHours}>18h - 23h</span>*/}
-              <span className={styles.scheduleHours}>fermé</span>
+              <span className={styles.scheduleHours}>18h - 23h</span>
             </li>
             <li
               className={`${styles.schedule} ${
