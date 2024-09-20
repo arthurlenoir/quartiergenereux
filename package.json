@@ -13,7 +13,9 @@
     "script:split-circo": "tsc ./scripts/split-circo-per-dep.ts && node ./scripts/split-circo-per-dep.js",
     "script:split-communes": "tsc ./scripts/split-communes-per-dep.ts && node ./scripts/split-communes-per-dep.js",
     "script:split-results": "tsc ./scripts/split-results-per-dep.ts && node ./scripts/split-results-per-dep.js",
-    "script:split-results2": "tsc ./scripts/split-results-2-per-dep.ts && node ./scripts/split-results-2-per-dep.js"
+    "script:split-results2": "tsc ./scripts/split-results-2-per-dep.ts && node ./scripts/split-results-2-per-dep.js",
+    "script:split-results-2022-1": "tsc ./scripts/split-results-2022-1-per-dep.ts && node ./scripts/split-results-2022-1-per-dep.js",
+    "script:split-results-2022-2": "tsc ./scripts/split-results-2022-2-per-dep.ts && node ./scripts/split-results-2022-2-per-dep.js"
   },
   "dependencies": {
     "@piwikpro/next-piwik-pro": "^2.1.1",

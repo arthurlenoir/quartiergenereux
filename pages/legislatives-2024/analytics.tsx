@@ -56,7 +56,6 @@ export default function Legislatives() {
         (result) => getResultKey(result) === featureKey
       );
       const sumupResults = sumDetailedResults(filteredResult);
-      console.log("sumupResults", sumupResults);
       setSelectedResult({ properties: selectedFeature, results: sumupResults });
     },
     [results]
@@ -178,6 +177,26 @@ export default function Legislatives() {
           </button>
         </div>
         <div className={style.buttonContainer}>
+          <button
+            className={`${style.button} ${
+              voting === Voting.LEGISLATIVE_2022_1 ? style.active : ""
+            }`}
+            onClick={() => {
+              setVoting(Voting.LEGISLATIVE_2022_1);
+            }}
+          >
+            1<sup>er</sup> tour législatives 2022
+          </button>
+          <button
+            className={`${style.button} ${
+              voting === Voting.LEGISLATIVE_2022_2 ? style.active : ""
+            }`}
+            onClick={() => {
+              setVoting(Voting.LEGISLATIVE_2022_2);
+            }}
+          >
+            2<sup>nd</sup> tour législatives 2022
+          </button>
           <button
             className={`${style.button} ${
               voting === Voting.LEGISLATIVE_2024_1 ? style.active : ""

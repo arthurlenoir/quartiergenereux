@@ -3,6 +3,12 @@ import { polePerNuance, PollingStationResult, Voting } from "../types";
 import { withZeroPrefix } from "../utils";
 
 const getResultsUrl = (voting: Voting, district: string) => {
+  if (voting === Voting.LEGISLATIVE_2022_1) {
+    return `/data/resultats-2022-1er-tour-${district}.json`;
+  }
+  if (voting === Voting.LEGISLATIVE_2022_2) {
+    return `/data/resultats-2022-2nd-tour-${district}.json`;
+  }
   if (voting === Voting.LEGISLATIVE_2024_1) {
     return `/data/resultats-${district}.json`;
   }
@@ -30,6 +36,8 @@ export const useVotingResults = (voting: Voting, district: string) => {
   const [resultsPerVoting, setResultsPerVoting] = useState<
     Record<Voting, PollingStationResult[] | null>
   >({
+    [Voting.LEGISLATIVE_2022_1]: null,
+    [Voting.LEGISLATIVE_2022_2]: null,
     [Voting.LEGISLATIVE_2024_1]: null,
     [Voting.LEGISLATIVE_2024_2]: null,
   });
@@ -39,6 +47,8 @@ export const useVotingResults = (voting: Voting, district: string) => {
 
   useEffect(() => {
     setResultsPerVoting({
+      [Voting.LEGISLATIVE_2022_1]: null,
+      [Voting.LEGISLATIVE_2022_2]: null,
       [Voting.LEGISLATIVE_2024_1]: null,
       [Voting.LEGISLATIVE_2024_2]: null,
     });
@@ -51,17 +61,20 @@ export const useVotingResults = (voting: Voting, district: string) => {
         setResultsPerVoting((currentResults) => ({
           ...currentResults,
           [voting]: results.map((result) => {
-            const intermediateKey = `${result.postalCode}_${withZeroPrefix(
-              result.bureauDeVote
-            )}`;
-            let districtCode = districtPerPollingStation[intermediateKey];
-            let bureauDeVote = parseInt(result.bureauDeVote);
-            while (!districtCode && bureauDeVote > 0) {
-              --bureauDeVote;
+            let districtCode = result.districtCode;
+            if (!districtCode) {
               const intermediateKey = `${result.postalCode}_${withZeroPrefix(
-                `${bureauDeVote}`
+                result.bureauDeVote
               )}`;
               districtCode = districtPerPollingStation[intermediateKey];
+              let bureauDeVote = parseInt(result.bureauDeVote);
+              while (!districtCode && bureauDeVote > 0) {
+                --bureauDeVote;
+                const intermediateKey = `${result.postalCode}_${withZeroPrefix(
+                  `${bureauDeVote}`
+                )}`;
+                districtCode = districtPerPollingStation[intermediateKey];
+              }
             }
             return {
               ...result,

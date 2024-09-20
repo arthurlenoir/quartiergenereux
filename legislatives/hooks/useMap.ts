@@ -47,13 +47,9 @@ export const useMap = (
         condition: mouseActionButton,
       });
       select.on("select", function (event) {
-        console.log("SELECT START", event);
-        console.log(
-          event.target.getFeatures().forEach((feature: any) => {
-            console.log("feature", feature.values_);
-            onSelectRef.current(feature.values_ as FeaturePropertiesI);
-          })
-        );
+        event.target.getFeatures().forEach((feature: any) => {
+          onSelectRef.current(feature.values_ as FeaturePropertiesI);
+        });
       });
       map.addInteraction(select);
       map.render();

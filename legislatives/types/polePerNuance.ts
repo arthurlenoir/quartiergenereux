@@ -8,6 +8,8 @@ export const polePerNuance: Record<Nuance, PoliticalPole> = {
   [Nuance.RDG]: PoliticalPole.Progressif,
   [Nuance.UG]: PoliticalPole.Progressif,
   [Nuance.VEC]: PoliticalPole.Progressif,
+  [Nuance.NUP]: PoliticalPole.Progressif,
+  [Nuance.DXG]: PoliticalPole.Progressif,
 
   [Nuance.DVG]: PoliticalPole.Progressif,
   [Nuance.SOC]: PoliticalPole.Progressif,

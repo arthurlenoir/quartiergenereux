@@ -1,4 +1,5 @@
 export enum Nuance {
+  NUP = "NUP", // NUPES
   EXG = "EXG", // Extrême gauche
   COM = "COM", // PCF
   FI = "FI", // LFI
@@ -6,6 +7,7 @@ export enum Nuance {
   UG = "UG", // Union des gauches / NFP
   VEC = "VEC", // Les écologistes (ex EELV)
 
+  DXG = "DXG", // Divers Ext-Gauche
   DVG = "DVG", // Divers Gauche
   SOC = "SOC", // PS
 
