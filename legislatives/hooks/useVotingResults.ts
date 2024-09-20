@@ -61,20 +61,17 @@ export const useVotingResults = (voting: Voting, district: string) => {
         setResultsPerVoting((currentResults) => ({
           ...currentResults,
           [voting]: results.map((result) => {
-            let districtCode = result.districtCode;
-            if (!districtCode) {
+            const intermediateKey = `${result.postalCode}_${withZeroPrefix(
+              result.bureauDeVote
+            )}`;
+            let districtCode = districtPerPollingStation[intermediateKey];
+            let bureauDeVote = parseInt(result.bureauDeVote);
+            while (!districtCode && bureauDeVote > 0) {
+              --bureauDeVote;
               const intermediateKey = `${result.postalCode}_${withZeroPrefix(
-                result.bureauDeVote
+                `${bureauDeVote}`
               )}`;
               districtCode = districtPerPollingStation[intermediateKey];
-              let bureauDeVote = parseInt(result.bureauDeVote);
-              while (!districtCode && bureauDeVote > 0) {
-                --bureauDeVote;
-                const intermediateKey = `${result.postalCode}_${withZeroPrefix(
-                  `${bureauDeVote}`
-                )}`;
-                districtCode = districtPerPollingStation[intermediateKey];
-              }
             }
             return {
               ...result,

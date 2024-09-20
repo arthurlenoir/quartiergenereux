@@ -87,9 +87,9 @@ export default function Legislatives() {
           const getResultKey = getResultKeyGetter(properties);
 
           const filteredResults = results
-            ? results.filter(
-                (result) => getFeatureKey(properties) === getResultKey(result)
-              )
+            ? results.filter((result) => {
+                return getFeatureKey(properties) === getResultKey(result);
+              })
             : [];
 
           const synthesedResults = sumResultsPerPole(filteredResults);
