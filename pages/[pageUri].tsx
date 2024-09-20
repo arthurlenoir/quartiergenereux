@@ -9,7 +9,6 @@ import styles from '../styles/Home.module.css'
 import { Menu } from '../types/menu';
 import { Page } from '../types/page';
 import { fetchPage } from '../utils/fetchPage';
-import { GoogleAgenda } from '../components/Agenda';
 import { GoogleAgendaPreview } from '../components/Agenda/GoogleAgendaPreview';
 
 export interface PageProps {

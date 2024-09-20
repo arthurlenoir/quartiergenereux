@@ -1,0 +1,55 @@
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 0;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.mapContainer {
+  flex: 1 1 auto;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.dataSummary {
+  flex: 0 1 300px;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.button {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 8px 16px;
+  border-radius: 3px;
+  font-weight: bold;
+  background: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #36478f18;
+}
+
+.button.active {
+  background-color: #36478f35;
+}

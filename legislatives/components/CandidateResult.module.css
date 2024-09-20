@@ -1,0 +1,25 @@
+.candidate {
+  margin-bottom: 8px;
+}
+
+.candidateLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  padding-bottom: 2px;
+}
+
+.mainLine {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.candidateName {
+  flex: 1 1 auto;
+}
+
+.candidateResult {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
