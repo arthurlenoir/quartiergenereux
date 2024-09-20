@@ -54,7 +54,7 @@ var splitResultsPerDep = function (dep) { return __awaiter(void 0, void 0, void 
         switch (_a.label) {
             case 0:
                 depValue = parseInt(dep);
-                return [4 /*yield*/, (0, promises_1.readFile)("./data/resultats-par-niveau-burvot-t1-france-entiere.txt", "utf8")];
+                return [4 /*yield*/, (0, promises_1.readFile)("./data/resultats-par-niveau-burvot-t1-france-entiere.txt", "latin1")];
             case 1:
                 fileContent = _a.sent();
                 writeStream = (0, fs_1.createWriteStream)("./public/data/resultats-2022-1er-tour-".concat(dep, ".json"));

@@ -14,7 +14,7 @@ const splitResultsPerDep = async (dep: string) => {
   const depValue = parseInt(dep);
   const fileContent = await readFile(
     "./data/resultats-par-niveau-burvot-t1-france-entiere.txt",
-    "utf8"
+    "latin1"
   );
   const writeStream = createWriteStream(
     `./public/data/resultats-2022-1er-tour-${dep}.json`
