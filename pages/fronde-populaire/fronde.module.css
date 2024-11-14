@@ -60,7 +60,7 @@
 }
 
 .mainContainer {
-  padding: 40px 20px;
+  padding: 40px 20px 0;
 }
 
 .date {
@@ -91,7 +91,8 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  vertical-align: center;
+  vertical-align: middle;
+  flex-wrap: wrap;
 }
 
 .lieu,
@@ -180,6 +181,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 8px;
+  white-space: normal;
 }
 
 .col2 ul {
@@ -234,4 +236,22 @@ b.btn:visited {
   font-size: 20px;
   border-radius: 45px;
   margin: 24px auto;
+}
+
+.orga {
+  margin-top: 32px;
+  color: #36478f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.orgaImage {
+  margin: 0 -40px 0;
+  max-width: calc(100% + 80px);
+  height: auto;
 }

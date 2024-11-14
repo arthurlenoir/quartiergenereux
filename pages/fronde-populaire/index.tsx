@@ -210,6 +210,41 @@ const FrondePopulaire: React.FC = () => {
                 alt="Quartier Généreux"
               />
             </div>
+
+            <div className={styles.orga}>
+              <div>
+                Nadia Belaouni,
+                <br /> 9<sup>ème</sup> circo
+              </div>
+              <div>
+                {" "}
+                Gabriel Blasco,
+                <br /> 7ème circo
+              </div>
+              <div>
+                {" "}
+                Sylvain Carrière,
+                <br /> 8ème circo
+              </div>
+              <div>
+                Magali Crozier,
+                <br /> 6ème circo
+              </div>
+              <div>
+                {" "}
+                Sébastien Rome,
+                <br />
+                4ème circo
+              </div>
+            </div>
+
+            <Image
+              src="/fronde/organisateurs-trices.webp"
+              width="932"
+              height="189"
+              alt="Organisateurs et organisatrices de l'évènement : Nadia Belaouni, Gabriel Blasco, Sylvain Carrière, Magali Crozier, Sébastien Rome."
+              className={styles.orgaImage}
+            />
           </div>
         </main>
       </div>
