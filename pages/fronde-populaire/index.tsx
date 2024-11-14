@@ -13,8 +13,8 @@ const FrondePopulaire: React.FC = () => {
     <>
       <Head>
         <title>
-          Fronde Populaire : Organisons la riposte contre l&pos;extrême droite
-          dans l&pos;Hérault
+          Fronde Populaire : Organisons la riposte contre l&apos;extrême droite
+          dans l&apos;Hérault
         </title>
         <meta
           name="description"
@@ -140,11 +140,15 @@ const FrondePopulaire: React.FC = () => {
               </li>
               <li>
                 Comment <b>monter un tiers lieu</b> vecteur de résistance face à
-                la montée de l&pos;extrême droite.
+                la montée de l&apos;extrême droite.
               </li>
               <li>
-                Construire <b>une écologie populaire</b> face à l&pos;idée
-                d'écologie punitive ?
+                Construire <b>une écologie populaire</b> face à l&apos;idée
+                d&apos;écologie punitive ?
+              </li>
+              <li>
+                Instrumentalisation de <b>la laïcité</b> : que faire ? Comment
+                en refaire un <b>principe de concorde</b> ?
               </li>
             </ul>
 
