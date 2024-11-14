@@ -18,6 +18,10 @@
     "script:split-results-2022-2": "tsc ./scripts/split-results-2022-2-per-dep.ts && node ./scripts/split-results-2022-2-per-dep.js"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.1.7",
+    "@mui/material": "^6.1.7",
     "@piwikpro/next-piwik-pro": "^2.1.1",
     "@turf/helpers": "^7.1.0",
     "@turf/union": "^7.0.0",
