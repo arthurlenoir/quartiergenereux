@@ -1,0 +1,237 @@
+.root {
+  background-image: url("/fronde/background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
+
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.header {
+  position: relative;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  }
+}
+
+.header p {
+  margin: -18px 0 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.main {
+  background-color: rgba(255, 255, 255, 0.72);
+  min-height: calc(100vh - 300px);
+  backdrop-filter: blur(3px);
+}
+
+.mainContainer {
+  padding: 40px 20px;
+}
+
+.date {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: -40px;
+  &:before {
+    content: "";
+    border-radius: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    background-color: #37ae6d;
+    padding: 0 10px;
+    margin: 0 -10px;
+    z-index: -1;
+  }
+}
+
+.lieuEtHeure {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  vertical-align: center;
+}
+
+.lieu,
+.heure {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.heure {
+  position: relative;
+
+  &:before {
+    content: "";
+    border-radius: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 18px;
+    width: 100%;
+    background-color: #e50053;
+    padding: 0 10px;
+    margin: 0 -10px;
+    z-index: -1;
+  }
+}
+
+.main h2 {
+  margin: 0 0 20px;
+  font-weight: 600;
+  color: #37ae6d;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.main h3 {
+  color: #e50053;
+  margin: 20px 0 20px;
+  font-weight: 600;
+  font-size: 22px;
+}
+.main h3 a,
+.main h3 a:visited {
+  color: inherit;
+  text-decoration: underline;
+  display: inline-block;
+  position: relative;
+
+  &:before {
+    content: "";
+    border-radius: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 18px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0 10px;
+    margin: 0 -10px;
+    z-index: -1;
+  }
+}
+
+.main ul {
+  color: #36478f;
+  font-weight: 400;
+  text-align: left;
+}
+.main ul li {
+  margin-bottom: 8px;
+}
+.main p {
+  color: #36478f;
+  font-weight: 400;
+  text-align: left;
+}
+.main p.footer {
+  font-size: 18px;
+  font-weight: 500;
+  flex: 1 1 50%;
+  text-align: right;
+}
+
+.col2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.col2 ul {
+  flex: 1 1 100px;
+  min-width: 400px;
+}
+
+.conference {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.intervenant {
+  flex: 1 1 150px;
+  min-width: 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.intervenant img {
+  width: 100px;
+  height: 100px;
+  border-radius: 33%;
+  object-fit: cover;
+}
+
+.intervenant p {
+  flex: 1 1 auto;
+  color: #36478f;
+  font-weight: 400;
+  text-align: left;
+}
+.intervenant p .name {
+  font-weight: bold;
+  display: block;
+}
+
+.btn,
+a.btn,
+b.btn:visited {
+  font-family: "Raleway", sans-serif;
+  background-color: #e50053;
+  display: inline-block;
+  padding: 12px 24px;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  border-radius: 45px;
+  margin: 24px auto;
+}
