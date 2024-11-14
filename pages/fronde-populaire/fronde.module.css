@@ -17,10 +17,12 @@
 .header {
   position: relative;
   height: 340px;
+  padding: 16px 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   text-transform: uppercase;
   color: white;
   font-size: 22px;
@@ -39,6 +41,14 @@
   }
 }
 
+.mainHeader {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .header p {
   margin: -18px 0 0;
 }
@@ -51,12 +61,13 @@
   margin: auto;
   box-sizing: border-box;
   text-align: center;
+  font-size: 18px;
 }
 
 .main {
   background-color: rgba(255, 255, 255, 0.72);
   min-height: calc(100vh - 300px);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px);
 }
 
 .mainContainer {
@@ -70,7 +81,7 @@
   font-size: 30px;
   position: relative;
   display: inline-block;
-  margin-bottom: -40px;
+  margin-bottom: -8px;
   &:before {
     content: "";
     border-radius: 1px;

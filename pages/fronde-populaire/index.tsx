@@ -45,11 +45,11 @@ const FrondePopulaire: React.FC = () => {
       </Head>
       <div className={styles.root}>
         <header className={styles.header}>
-          <div className={styles.container}>
+          <div className={`${styles.mainHeader} ${styles.container}`}>
             <div className={styles.date}>30 Novembre</div>
             <Image
               src="/fronde/titre.webp"
-              style={{ maxWidth: "100%", height: "auto", margin: "auto" }}
+              style={{ maxWidth: "100%", height: "auto", margin: "0 auto" }}
               width="1170"
               height="175"
               alt="La Fronde Populaire !"
@@ -58,6 +58,9 @@ const FrondePopulaire: React.FC = () => {
               Dans l’Hérault, organisons la
               <br /> riposte face à l’extrême droite
             </p>
+          </div>
+
+          <div className={styles.container}>
             <div className={styles.lieuEtHeure}>
               <div className={styles.lieu}>
                 <RoomIcon />
