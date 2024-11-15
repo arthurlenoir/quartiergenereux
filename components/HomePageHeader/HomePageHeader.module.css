@@ -1,9 +1,10 @@
 .homeHeader {
     background-image: url('/quartier-genereux-header.webp');
     height: 0;
-    padding-top: 29.53125%;
-    background-size: contain;
+    padding-top: 20%;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom center;
     position: absolute;
     top: 140px;
     left: 0;

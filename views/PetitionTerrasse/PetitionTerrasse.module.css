@@ -1,0 +1,25 @@
+.container {
+  margin-bottom: 48px;
+}
+
+.linkButton,
+a.linkButton,
+a.linkButton:visited {
+  background-color: var(--tertiary);
+  color: white;
+  font-weight: bold;
+  padding: 16px 32px;
+  font-size: 20px;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 16px auto;
+  width: auto;
+}
+
+.buttonContainer {
+    text-align: center;
+}
+
+.subButton {
+    font-style: italic;
+}
