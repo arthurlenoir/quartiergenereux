@@ -57,7 +57,7 @@
 .container {
   position: relative;
   z-index: 1;
-  max-width: 900px;
+  max-width: 1200px;
   width: 100%;
   margin: auto;
   box-sizing: border-box;
@@ -236,26 +236,36 @@
   display: block;
 }
 
+.conferences,
 .ateliers,
 .tablesRondes {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
   margin: 0 0 40px;
 }
 
+.conferences figure {
+  flex: 1 1 400px;
+  margin: 0;
+  max-width: 800px;
+}
+
 .ateliers figure {
   flex: 1 1 400px;
   margin: 0;
+  max-width: 600px;
 }
 
 .tablesRondes figure {
-  flex: 1 1 500px;
+  flex: 1 1 400px;
   margin: 0;
+  max-width: 600px;
 }
 
+.conferences figure img,
 .ateliers figure img,
 .tablesRondes figure img {
   height: auto;

@@ -75,48 +75,15 @@ const FrondePopulaire: React.FC = () => {
         </header>
         <main className={styles.main}>
           <div className={`${styles.container} ${styles.mainContainer}`}>
-            <h2>
-              Conférence “Montée du RN dans l&apos;Hérault :
-              <br /> comprendre le phénomène et l&apos;endiguer”
-            </h2>
-            <div className={styles.conference}>
-              <div className={styles.intervenant}>
+            <div className={styles.conferences}>
+              <figure>
                 <Image
-                  src="/fronde/benoit-coquard.webp"
-                  width="100"
-                  height="100"
-                  alt="Benoît Coquard"
+                  src="/fronde/programme/conference.webp"
+                  width="500"
+                  height="355"
+                  alt="Conférence “Montée du RN dans l'Hérault : comprendre le phénomène et l'endiguer”"
                 />
-                <p>
-                  <span className={styles.name}>Benoît Coquard</span>
-                  sociologue, auteur de “Ceux qui restent”
-                </p>
-              </div>
-              <div className={styles.intervenant}>
-                <Image
-                  src="/fronde/tristan-berteloot.webp"
-                  width="100"
-                  height="100"
-                  alt="Tristan Berteloot"
-                />
-                <p>
-                  <span className={styles.name}>Tristan Berteloot</span>
-                  journaliste à Libération, auteur de “la machine à gagner”
-                </p>
-              </div>
-              <div className={styles.intervenant}>
-                <Image
-                  src="/fronde/emmanuel.negrier.webp"
-                  width="100"
-                  height="100"
-                  alt="Emmanuel Négrier"
-                />
-                <p>
-                  <span className={styles.name}>Emmanuel Négrier</span>
-                  politiste, auteur d’articles d’analyse électorale sur
-                  l’Hérault
-                </p>
-              </div>
+              </figure>
             </div>
 
             <a
