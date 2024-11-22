@@ -35,7 +35,7 @@ const FrondePopulaire: React.FC = () => {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossOrigin="true"
+          crossOrigin="anonymous"
         />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
@@ -127,60 +127,99 @@ const FrondePopulaire: React.FC = () => {
             </a>
 
             <h2>Tables-rondes</h2>
-            <ul>
-              <li>
-                La <b>métropolisation</b> à outrance : le creuset des fractures
-                territoriales ?
-              </li>
-              <li>
-                Extrême droite dans l&apos;Hérault : « on vous voit ! ». Focus
-                sur le projet de{" "}
-                <b>l&apos;observatoire de l&apos;extrême droite.</b>
-              </li>
-              <li>
-                <b>Programme du NFP :</b> montrer son applicabilité en
-                commençant par nos communes en 2026 ?
-              </li>
-              <li>
-                Comment <b>monter un tiers lieu</b> vecteur de résistance face à
-                la montée de l&apos;extrême droite.
-              </li>
-              <li>
-                Construire <b>une écologie populaire</b> face à l&apos;idée
-                d&apos;écologie punitive ?
-              </li>
-              <li>
-                Instrumentalisation de <b>la laïcité</b> : que faire ? Comment
-                en refaire un <b>principe de concorde</b> ?
-              </li>
-            </ul>
+            <div className={styles.tablesRondes}>
+              <figure>
+                <Image
+                  src="/fronde/programme/metropolisation.webp"
+                  width="500"
+                  height="355"
+                  alt="La métropolisation à outrance : le creuset des fractures
+                territoriales ?"
+                />
+              </figure>
+              <figure>
+                <Image
+                  src="/fronde/programme/laicite.webp"
+                  width="500"
+                  height="355"
+                  alt="Instrumentalisation de la laïcité : que faire ? Comment
+                en refaire un principe de concorde ?"
+                />
+              </figure>
+              <figure>
+                <Image
+                  src="/fronde/programme/observatoire.webp"
+                  width="500"
+                  height="355"
+                  alt="Extrême droite dans l'Hérault : « on vous voit ! ». Focus
+                sur le projet de l'observatoire de l'extrême droite."
+                />
+              </figure>
+              <figure>
+                <Image
+                  src="/fronde/programme/ecologie-populaire.webp"
+                  width="500"
+                  height="355"
+                  alt="Construire une écologie populaire face à l'idée d'écologie punitive ?"
+                />
+              </figure>
+              <figure>
+                <Image
+                  src="/fronde/programme/tiers-lieu.webp"
+                  width="500"
+                  height="355"
+                  alt="Comment monter un tiers lieu vecteur de résistance face à la montée de l'extrême droite."
+                />
+              </figure>
+            </div>
 
             <h2>Ateliers pratiques</h2>
-            <div className={styles.col2}>
-              <ul>
-                <li>
-                  <b>Comment débattre</b> avec des électeur·ices du RN ?
-                </li>
-                <li>
-                  Savoir prendre des photos ou monter des vidéos pour{" "}
-                  <b>valoriser nos luttes</b>
-                </li>
-                <li>
-                  <b>Résister en féministes :</b> outils et perspectives pour
-                  lutter contre le fascisme
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <b>Des visuels pour occuper l&apos;espace,</b> sérigraphie,
-                  lino, pochoirs, etc.
-                </li>
-                <li>
-                  Des techniques de <b>porte-à-porte</b> et pleins d’autres
-                  encore !
-                </li>
-              </ul>
+            <div className={styles.ateliers}>
+              <figure>
+                <Image
+                  src="/fronde/programme/feministe.webp"
+                  width="500"
+                  height="355"
+                  alt="RESISTER EN FEMINISTES : Les droits des femmes font partie des premieres cibles des extrêmes droites au pouvoir. Mais le féminisme représente aussi un outil puissant de lutte contre le fascisme."
+                />
+              </figure>
+              <figure>
+                <Image
+                  src="/fronde/programme/visuel-partout.webp"
+                  width="500"
+                  height="355"
+                  alt="Visuels partout, fachos nulle part ! Fabriquer, imprimer et placarder nos valeurs : mode d'emploi."
+                />
+              </figure>
+              <figure>
+                <Image
+                  src="/fronde/programme/demarches-citoyennes.webp"
+                  width="500"
+                  height="355"
+                  alt="Les Démarches Citoyennes Locales, une Opportunité pour Lutter contre l’Extrême Droite ? À travers l'exemple de Lunel Collectif, nous verrons comment les démarches citoyennes locales peuvent offrir une alternative à l’extrême droite en répondant aux vraies préoccupations des électeurs."
+                />
+              </figure>
+              <figure>
+                <Image
+                  src="/fronde/programme/porte-a-porte.webp"
+                  width="500"
+                  height="355"
+                  alt="Lutter contre la mal-inscription pour aller chercher les abstentionnistes : l’exercice du porte à porte "
+                />
+              </figure>
             </div>
+            <p>Et aussi :</p>
+            <ul>
+              <li>
+                <b>Comment débattre</b> avec des électeur·ices du RN ?
+              </li>
+              <li>
+                Savoir prendre des photos ou monter des vidéos pour{" "}
+                <b>valoriser nos luttes</b>
+              </li>
+              <li>Monter une vidéo en 15 minutes</li>
+              <li>Renforcer son organisation de jeunesse</li>
+            </ul>
             <h3>
               Et aussi : Banquet - Concert de{" "}
               <a

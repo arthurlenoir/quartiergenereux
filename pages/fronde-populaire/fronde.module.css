@@ -236,6 +236,32 @@
   display: block;
 }
 
+.ateliers,
+.tablesRondes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0 0 40px;
+}
+
+.ateliers figure {
+  flex: 1 1 400px;
+  margin: 0;
+}
+
+.tablesRondes figure {
+  flex: 1 1 500px;
+  margin: 0;
+}
+
+.ateliers figure img,
+.tablesRondes figure img {
+  height: auto;
+  width: 100%;
+}
+
 .btn,
 a.btn,
 b.btn:visited {
