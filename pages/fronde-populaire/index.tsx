@@ -138,6 +138,14 @@ const FrondePopulaire: React.FC = () => {
                   alt="Comment monter un tiers lieu vecteur de résistance face à la montée de l'extrême droite."
                 />
               </figure>
+              <figure>
+                <Image
+                  src="/fronde/programme/programme.webp"
+                  width="500"
+                  height="374"
+                  alt="Programme du Nouveau Front Populaire : et si on en montrait son applicabilité en commençant par nos communes en 2026 ?"
+                />
+              </figure>
             </div>
 
             <h2>Ateliers pratiques</h2>
@@ -196,6 +204,22 @@ const FrondePopulaire: React.FC = () => {
                   width="500"
                   height="374"
                   alt="Lutter contre la mal-inscription pour aller chercher les abstentionnistes : l’exercice du porte à porte "
+                />
+              </figure>
+              <figure>
+                <Image
+                  src="/fronde/programme/militer-ensemble.webp"
+                  width="500"
+                  height="374"
+                  alt="Comment faire pour militer ensemble quand on se déteste ? (atelier sous réserve)"
+                />
+              </figure>
+              <figure>
+                <Image
+                  src="/fronde/programme/vss.webp"
+                  width="500"
+                  height="374"
+                  alt="Mettre en place des outils pour prévenir et prendre en charge les violences sexistes et sexuelles dans nos organization (atelier sous réserve)"
                 />
               </figure>
             </div>
