@@ -85,14 +85,12 @@ const FrondePopulaire: React.FC = () => {
                 />
               </figure>
             </div>
-
             <a
               href="https://www.helloasso.com/associations/le-quartier-genereux/evenements/fronde-populaire"
               className={styles.btn}
             >
               Je m&apos;inscris !
             </a>
-
             <h2>Tables-rondes</h2>
             <div className={styles.tablesRondes}>
               <figure>
@@ -147,7 +145,6 @@ const FrondePopulaire: React.FC = () => {
                 />
               </figure>
             </div>
-
             <h2>Ateliers pratiques</h2>
             <div className={styles.ateliers}>
               <figure>
@@ -223,17 +220,28 @@ const FrondePopulaire: React.FC = () => {
                 />
               </figure>
             </div>
-            <h3>
-              Et aussi : Banquet - Concert de{" "}
+            <a
+              href="https://www.helloasso.com/associations/le-quartier-genereux/evenements/fronde-populaire"
+              className={styles.btn}
+            >
+              Je m&apos;inscris !
+            </a>
+            <div className={styles.ateliers}>
               <a
                 href="https://www.youtube.com/watch?v=Wn4vH0TBTZY"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Dab Rozer
-              </a>{" "}
-              - Garderie militante
-            </h3>
+                <figure>
+                  <Image
+                    src="/fronde/programme/dab-rozer.webp"
+                    width="1080"
+                    height="1080"
+                    alt="Concert de Dab Rozer"
+                  />
+                </figure>
+              </a>
+            </div>
 
             <a
               href="https://www.helloasso.com/associations/le-quartier-genereux/evenements/fronde-populaire"
@@ -241,7 +249,6 @@ const FrondePopulaire: React.FC = () => {
             >
               Je m&apos;inscris !
             </a>
-
             <div className={styles.col2}>
               <div>
                 <h3>🚘 COVOITURAGE</h3>
@@ -288,7 +295,12 @@ const FrondePopulaire: React.FC = () => {
                 </p>
               </div>
             </div>
-
+            <a
+              href="https://www.helloasso.com/associations/le-quartier-genereux/evenements/fronde-populaire"
+              className={styles.btn}
+            >
+              Je m&apos;inscris !
+            </a>
             <div className={`${styles.col2} ${styles.footerContainer}`}>
               <p className={styles.footer}>
                 À l’initiative des candidat·es NFP aux législatives 2024 des
@@ -302,7 +314,6 @@ const FrondePopulaire: React.FC = () => {
                 alt="Quartier Généreux"
               />
             </div>
-
             <div className={styles.orga}>
               <div>
                 Nadia Belaouni,
@@ -329,7 +340,6 @@ const FrondePopulaire: React.FC = () => {
                 4ème circo
               </div>
             </div>
-
             <Image
               src="/fronde/organisateurs-trices.webp"
               width="932"
