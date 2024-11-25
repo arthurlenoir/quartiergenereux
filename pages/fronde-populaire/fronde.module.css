@@ -192,13 +192,28 @@
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 32px;
   white-space: normal;
 }
 
-.col2 ul {
+.col2 ul,
+.col2 > div {
   flex: 1 1 100px;
   min-width: 400px;
+}
+
+.col2 > div p {
+  margin-bottom: 32px;
+}
+.col2 > div p a,
+.col2 > div p a:visited {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.footerContainer {
+  max-width: 600px;
+  margin: 24px auto;
 }
 
 .conference {

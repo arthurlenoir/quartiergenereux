@@ -80,7 +80,7 @@ const FrondePopulaire: React.FC = () => {
                 <Image
                   src="/fronde/programme/conference.webp"
                   width="500"
-                  height="355"
+                  height="374"
                   alt="Conférence “Montée du RN dans l'Hérault : comprendre le phénomène et l'endiguer”"
                 />
               </figure>
@@ -99,7 +99,7 @@ const FrondePopulaire: React.FC = () => {
                 <Image
                   src="/fronde/programme/metropolisation.webp"
                   width="500"
-                  height="355"
+                  height="374"
                   alt="La métropolisation à outrance : le creuset des fractures
                 territoriales ?"
                 />
@@ -108,7 +108,7 @@ const FrondePopulaire: React.FC = () => {
                 <Image
                   src="/fronde/programme/laicite.webp"
                   width="500"
-                  height="355"
+                  height="374"
                   alt="Instrumentalisation de la laïcité : que faire ? Comment
                 en refaire un principe de concorde ?"
                 />
@@ -117,7 +117,7 @@ const FrondePopulaire: React.FC = () => {
                 <Image
                   src="/fronde/programme/observatoire.webp"
                   width="500"
-                  height="355"
+                  height="374"
                   alt="Extrême droite dans l'Hérault : « on vous voit ! ». Focus
                 sur le projet de l'observatoire de l'extrême droite."
                 />
@@ -126,7 +126,7 @@ const FrondePopulaire: React.FC = () => {
                 <Image
                   src="/fronde/programme/ecologie-populaire.webp"
                   width="500"
-                  height="355"
+                  height="374"
                   alt="Construire une écologie populaire face à l'idée d'écologie punitive ?"
                 />
               </figure>
@@ -134,7 +134,7 @@ const FrondePopulaire: React.FC = () => {
                 <Image
                   src="/fronde/programme/tiers-lieu.webp"
                   width="500"
-                  height="355"
+                  height="374"
                   alt="Comment monter un tiers lieu vecteur de résistance face à la montée de l'extrême droite."
                 />
               </figure>
@@ -146,23 +146,47 @@ const FrondePopulaire: React.FC = () => {
                 <Image
                   src="/fronde/programme/feministe.webp"
                   width="500"
-                  height="355"
+                  height="374"
                   alt="RESISTER EN FEMINISTES : Les droits des femmes font partie des premieres cibles des extrêmes droites au pouvoir. Mais le féminisme représente aussi un outil puissant de lutte contre le fascisme."
+                />
+              </figure>
+              <figure>
+                <Image
+                  src="/fronde/programme/debattre.webp"
+                  width="500"
+                  height="374"
+                  alt="Comment débattre avec des électeurs du RN ? Théatre Forum POUR DES CONVERSATIONS EFFICACES"
                 />
               </figure>
               <figure>
                 <Image
                   src="/fronde/programme/visuel-partout.webp"
                   width="500"
-                  height="355"
+                  height="374"
                   alt="Visuels partout, fachos nulle part ! Fabriquer, imprimer et placarder nos valeurs : mode d'emploi."
+                />
+              </figure>
+              <figure>
+                <Image
+                  src="/fronde/programme/monter-video.webp"
+                  width="500"
+                  height="374"
+                  alt="Monter une vidéo en 15 minutes"
+                />
+              </figure>
+              <figure>
+                <Image
+                  src="/fronde/programme/photos.webp"
+                  width="500"
+                  height="374"
+                  alt="Savoir prendre des photos pour valoriser nos luttes et modes militants"
                 />
               </figure>
               <figure>
                 <Image
                   src="/fronde/programme/demarches-citoyennes.webp"
                   width="500"
-                  height="355"
+                  height="374"
                   alt="Les Démarches Citoyennes Locales, une Opportunité pour Lutter contre l’Extrême Droite ? À travers l'exemple de Lunel Collectif, nous verrons comment les démarches citoyennes locales peuvent offrir une alternative à l’extrême droite en répondant aux vraies préoccupations des électeurs."
                 />
               </figure>
@@ -170,23 +194,11 @@ const FrondePopulaire: React.FC = () => {
                 <Image
                   src="/fronde/programme/porte-a-porte.webp"
                   width="500"
-                  height="355"
+                  height="374"
                   alt="Lutter contre la mal-inscription pour aller chercher les abstentionnistes : l’exercice du porte à porte "
                 />
               </figure>
             </div>
-            <p>Et aussi :</p>
-            <ul>
-              <li>
-                <b>Comment débattre</b> avec des électeur·ices du RN ?
-              </li>
-              <li>
-                Savoir prendre des photos ou monter des vidéos pour{" "}
-                <b>valoriser nos luttes</b>
-              </li>
-              <li>Monter une vidéo en 15 minutes</li>
-              <li>Renforcer son organisation de jeunesse</li>
-            </ul>
             <h3>
               Et aussi : Banquet - Concert de{" "}
               <a
@@ -207,6 +219,53 @@ const FrondePopulaire: React.FC = () => {
             </a>
 
             <div className={styles.col2}>
+              <div>
+                <h3>🚘 COVOITURAGE</h3>
+                <p>
+                  En vous inscrivant, vous recevrez un lien pour organiser votre
+                  covoiturage (proposer des trajets si vous venez en voiture, en
+                  trouvez un si vous n&apos;êtes pas véhiculé·e)
+                </p>
+                <p>
+                  🚴Possibilité de Montpellier d&apos;y aller à Vélo (11km -
+                  compter 35 min depuis la Mosson)
+                </p>
+
+                <h3>⛳️ ADRESSE</h3>
+                <p>
+                  <a
+                    href="https://maps.app.goo.gl/5ZUaMeRajNbv7u8e6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    MACONDO, Montarnaud
+                  </a>
+                  <br />À Bel air, prendre la route de Murviel les Montpellier
+                  (D102), panneau indicateur &ldquo;MACONDO&rdquo; peu après le
+                  DOMAINE DES 4 PILAS.
+                </p>
+              </div>
+
+              <div>
+                <h3>🍛🥗 REPAS</h3>
+                <p>
+                  Un traiteur sera sur place et vendra des plats végétariens et
+                  non végétariens pour 8€ midi et soir.
+                </p>
+
+                <h3>☕️🍺 BAR & CAFE</h3>
+                <p>Assuré par le Quartier Génereux toute la journée.</p>
+
+                <h3>👨‍👩‍👦 GARDERIE MILITANTE</h3>
+                <p>
+                  Elle sera ouverte toute la journée et jusqu&apos;a 19h. Il
+                  faut signaler que vous souhaitez laisser vos enfants lors de
+                  votre inscription.
+                </p>
+              </div>
+            </div>
+
+            <div className={`${styles.col2} ${styles.footerContainer}`}>
               <p className={styles.footer}>
                 À l’initiative des candidat·es NFP aux législatives 2024 des
                 circonscriptions RN ou fortement menacées par le RN et
