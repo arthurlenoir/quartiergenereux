@@ -295,6 +295,22 @@ const FrondePopulaire: React.FC = () => {
                 </p>
               </div>
             </div>
+            <div className={styles.ateliers}>
+              <a
+                    href="https://maps.app.goo.gl/5ZUaMeRajNbv7u8e6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+              >
+                <figure>
+                  <Image
+                    src="/fronde/trouver-macondo.webp"
+                    width="1080"
+                    height="1080"
+                    alt="Carte pour rejoindre Macondo à Montarnaud"
+                  />
+                </figure>
+              </a>
+            </div>
             <a
               href="https://www.helloasso.com/associations/le-quartier-genereux/evenements/fronde-populaire"
               className={styles.btn}
@@ -320,24 +336,25 @@ const FrondePopulaire: React.FC = () => {
                 <br /> 9<sup>ème</sup> circo
               </div>
               <div>
-                {" "}
                 Gabriel Blasco,
-                <br /> 7ème circo
+                <br /> 7<sup>ème</sup> circo
               </div>
               <div>
-                {" "}
                 Sylvain Carrière,
-                <br /> 8ème circo
+                <br /> 8<sup>ème</sup> circo
+              </div>
+              <div>
+                Jean-Louis Roumegas,
+                <br /> 1<sup>ère</sup> circo
               </div>
               <div>
                 Magali Crozier,
-                <br /> 6ème circo
+                <br /> 6<sup>ème</sup> circo
               </div>
               <div>
                 {" "}
                 Sébastien Rome,
-                <br />
-                4ème circo
+                <br />4<sup>ème</sup> circo
               </div>
             </div>
             <Image

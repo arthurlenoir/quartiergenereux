@@ -302,7 +302,8 @@ b.btn:visited {
 }
 
 .orga {
-  margin-top: 32px;
+  margin: 32px auto 0;
+  max-width: 932px;
   color: #36478f;
   display: flex;
   align-items: center;
