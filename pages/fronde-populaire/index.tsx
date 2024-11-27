@@ -75,6 +75,9 @@ const FrondePopulaire: React.FC = () => {
         </header>
         <main className={styles.main}>
           <div className={`${styles.container} ${styles.mainContainer}`}>
+            <h2>Accueil</h2>
+            <h3>Accueil avec Café et autres boissons chaudes à partir de 9h30</h3>
+            <br />
             <div className={styles.conferences}>
               <figure>
                 <Image
@@ -297,9 +300,9 @@ const FrondePopulaire: React.FC = () => {
             </div>
             <div className={styles.ateliers}>
               <a
-                    href="https://maps.app.goo.gl/5ZUaMeRajNbv7u8e6"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                href="https://maps.app.goo.gl/5ZUaMeRajNbv7u8e6"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <figure>
                   <Image
