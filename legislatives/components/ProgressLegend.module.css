@@ -1,0 +1,26 @@
+.progressLegend {
+  width: 600px;
+  max-width: 100%;
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 8px auto 24px;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.progressLegendSection {
+  flex: 1 1 auto;
+  height: 6px;
+  position: relative;
+}
+
+.progressLegendSection > span {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  font-weight: 500;
+  font-size: 12px;
+}
