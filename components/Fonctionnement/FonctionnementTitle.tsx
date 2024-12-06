@@ -11,7 +11,7 @@ export const FonctionnementTitle: React.FC<React.PropsWithChildren> = ({
         fontSize: "56px",
         letterSpacing: "5px",
         color: "#36478f",
-        margin: "0 0 -120px",
+        margin: "0 0 -60px",
       }}
     >
       <svg
