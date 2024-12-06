@@ -6,7 +6,6 @@ import style from "./WorkingGroups.module.css";
 import { WorkingGroup } from "./WorkingGroup.types";
 
 interface Props {
-  count: number;
   workingGroups: WorkingGroup[];
 }
 
