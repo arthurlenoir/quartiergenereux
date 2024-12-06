@@ -1,0 +1,62 @@
+.ReferentsContainer {
+  position: absolute;
+  top: 112px;
+  left: 400px;
+  width: 210px;
+  height: 160px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  z-index: 2;
+  transform-origin: center 300px;
+}
+
+.GroupNameContainer {
+  position: absolute;
+  top: -78px;
+  left: 10px;
+  width: 120%;
+  height: 100%;
+}
+
+.GroupName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "LilitaOne";
+  color: #36478f;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px 0 white;
+  position: relative;
+}
+
+.Referents {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ReferentName {
+  background-color: #36478f;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-family: "Raleway";
+  font-weight: bold;
+  margin-top: -8px;
+  z-index: 3;
+  position: relative;
+}
+
+.Heart {
+  position: absolute;
+  width: 300px;
+  top: 30px;
+  left: 350px;
+  transform-origin: center 360px;
+  cursor: pointer;
+}

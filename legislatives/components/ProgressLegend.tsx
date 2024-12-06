@@ -26,7 +26,6 @@ export const ProgressLegend: React.FC<Props> = (props) => {
   const color4 = getColorForProgression(threshold3, props).toHex8String();
   const color5 = getColorForProgression(threshold4, props).toHex8String();
   const color6 = getColorForProgression(max, props).toHex8String();
-  console.log(min, threshold1, threshold2, threshold3, threshold4, max);
   return (
     <div className={styles.progressLegend}>
       <div
