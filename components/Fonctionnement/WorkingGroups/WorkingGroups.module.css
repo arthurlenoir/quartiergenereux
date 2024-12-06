@@ -1,3 +1,23 @@
+.Center {
+  position: absolute;
+  top: 260px;
+  left: 375px;
+  height: 250px;
+  width: 250px;
+  background-color: #f0c8b7;
+  border-radius: 50%;
+  border: 4px dashed #fcc00a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "LilitaOne";
+  color: #36478f;
+  font-size: 34px;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px 0 #f5e1d5;
+}
+
 .ReferentsContainer {
   position: absolute;
   top: 112px;

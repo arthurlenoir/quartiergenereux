@@ -12,6 +12,7 @@ interface Props {
 export const WorkingGroups: React.FC<Props> = ({ workingGroups }) => {
   const refContainer = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
+  const [hoveredElement, setHoveredElement] = useState<number | null>(null);
 
   useLayoutEffect(() => {
     const onResize = () => {
@@ -23,6 +24,7 @@ export const WorkingGroups: React.FC<Props> = ({ workingGroups }) => {
     onResize();
     return () => window.removeEventListener("resize", onResize);
   }, []);
+
   return (
     <div ref={refContainer}>
       <div
@@ -34,29 +36,7 @@ export const WorkingGroups: React.FC<Props> = ({ workingGroups }) => {
           transformOrigin: "0 0",
         }}
       >
-        <div
-          style={{
-            position: "absolute",
-            top: 260,
-            left: 500 - 125,
-            height: "250px",
-            width: "250px",
-            backgroundColor: "#f0c8b7",
-            borderRadius: "50%",
-            border: "4px dashed #fcc00a",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontFamily: "LilitaOne",
-            color: "#36478f",
-            fontSize: "34px",
-            textTransform: "uppercase",
-            textAlign: "center",
-            textShadow: "2px 2px 0 #F5E1D5",
-          }}
-        >
-          Assemblée Généreuse
-        </div>
+        <div className={style.Center}>Assemblée Généreuse</div>
         {workingGroups.map((workingGroup, i) => {
           const angle = (i * 360) / workingGroups.length;
           const insideAngle = 45 + 15 * i;
@@ -69,12 +49,17 @@ export const WorkingGroups: React.FC<Props> = ({ workingGroups }) => {
                 style={{
                   transform: `rotate(${angle}deg)`,
                 }}
+                onMouseEnter={() => setHoveredElement(i)}
+                onMouseLeave={() => setHoveredElement(null)}
+                isHover={hoveredElement === i}
               />
               <div
                 className={style.ReferentsContainer}
                 style={{
                   transform: `rotate(${angle}deg)`,
                 }}
+                onMouseEnter={() => setHoveredElement(i)}
+                onMouseLeave={() => setHoveredElement(null)}
               >
                 <div
                   className={style.GroupNameContainer}
