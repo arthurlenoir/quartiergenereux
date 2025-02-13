@@ -325,7 +325,9 @@ export default function Fonctionnement({ menu }: PageProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Root menu={menu} style={{ fontSize: "18px" }}>
-        <FonctionnementSubTitle size={6}>Notre gouvernance</FonctionnementSubTitle>
+        <FonctionnementSubTitle size={6}>
+          Notre gouvernance
+        </FonctionnementSubTitle>
         <p>
           Notre fonctionnement est basé sur la{" "}
           <strong>gouvernance partagée</strong> afin d&apos;éviter une forte
@@ -371,24 +373,24 @@ export default function Fonctionnement({ menu }: PageProps) {
           candidat·e une fois par an, peut s&apos;opposer à une décision prise
           en AGeuse uniquement si celle-ci implique sa responsabilité juridique.
         </p>
-      </Root>
 
-      <FonctionnementSubTitle size={4}>
-        Le conseil des garant·es
-      </FonctionnementSubTitle>
-      <p>
-        Le conseil des garant·es veille à{" "}
-        <strong>la pérennisation des 3 piliers</strong> qui ont été fixés lors
-        de la création du Quartier Généreux&nbsp;: un lieu ancré dans le
-        quartier, un lieu festif et culturel, un lieu engagé politiquement,
-        notions inscrites notamment dans{" "}
-        <Link href="/charte">la charte de l’association</Link>.
-      </p>
-      <p>
-        Le <strong>conseil des garant·es</strong>, composé de 9 personnes, élu
-        au jugement majoritaire, peut s&apos;opposer à une décision prise en
-        AGeuse celle-ci ne respecte pas notre charte.
-      </p>
+        <FonctionnementSubTitle size={4}>
+          Le conseil des garant·es
+        </FonctionnementSubTitle>
+        <p>
+          Le conseil des garant·es veille à{" "}
+          <strong>la pérennisation des 3 piliers</strong> qui ont été fixés lors
+          de la création du Quartier Généreux&nbsp;: un lieu ancré dans le
+          quartier, un lieu festif et culturel, un lieu engagé politiquement,
+          notions inscrites notamment dans{" "}
+          <Link href="/charte">la charte de l’association</Link>.
+        </p>
+        <p>
+          Le <strong>conseil des garant·es</strong>, composé de 9 personnes, élu
+          au jugement majoritaire, peut s&apos;opposer à une décision prise en
+          AGeuse celle-ci ne respecte pas notre charte.
+        </p>
+      </Root>
       <Footer />
     </>
   );
