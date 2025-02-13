@@ -26,14 +26,15 @@ export const WorkingGroups: React.FC<Props> = ({ workingGroups }) => {
   }, []);
 
   return (
-    <div ref={refContainer}>
+    <div ref={refContainer} style={{ height: `${(750 * width) / 1000}px` }}>
       <div
         style={{
           position: "relative",
-          height: "1000px",
+          height: "750px",
           width: "1000px",
           transform: width ? `scale(${width / 1000})` : "scale(1)",
           transformOrigin: "0 0",
+          overflow: "visible",
         }}
       >
         <div className={style.Center}>Assemblée Généreuse</div>

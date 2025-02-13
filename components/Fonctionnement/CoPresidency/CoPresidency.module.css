@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+}
+
+.container figure:nth-child(even) {
+  align-self: flex-start;
+}
+
+.container figure:nth-child(odd) {
+  align-self: flex-end;
+}
+
+.container figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container figure figcaption {
+  background-color: #36478f;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-family: "Raleway";
+  font-weight: bold;
+  margin-top: -8px;
+  z-index: 3;
+  padding: 2px 8px;
+  position: relative;
+}

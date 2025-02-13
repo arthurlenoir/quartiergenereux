@@ -7,7 +7,11 @@ import { TelegramIcon } from "../Icons/TelegramIcon";
 import { useScrollPercent } from "./hooks";
 import styles from "./Root.module.css";
 
-interface Props {
+interface Props
+  extends React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLDivElement>,
+    HTMLDivElement
+  > {
   children: ReactNode;
   menu: Menu | null;
 }
@@ -18,7 +22,12 @@ const COMPACT_HEADER_HEIGHT = 60;
 const scrollToFullyReduceHeader =
   FULL_SIZE_HEADER_HEIGHT - COMPACT_HEADER_HEIGHT;
 
-export const Root: React.FC<Props> = ({ children, menu }) => {
+export const Root: React.FC<Props> = ({
+  children,
+  menu,
+  className,
+  ...props
+}) => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const { asPath } = useRouter();
   const scrollPercent = useScrollPercent(
@@ -58,7 +67,7 @@ export const Root: React.FC<Props> = ({ children, menu }) => {
   );
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${className}`} {...props}>
       <header
         className={
           scrollPercent >= 1
