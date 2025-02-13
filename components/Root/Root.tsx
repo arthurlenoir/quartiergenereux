@@ -6,6 +6,7 @@ import { InstagramIcon } from "../Icons/InstagramIcon";
 import { TelegramIcon } from "../Icons/TelegramIcon";
 import { useScrollPercent } from "./hooks";
 import styles from "./Root.module.css";
+import { ChevronDown } from "../Icons/ChevronDown";
 
 interface Props
   extends React.DetailedHTMLProps<
@@ -59,7 +60,15 @@ export const Root: React.FC<Props> = ({
             }
           >
             {menuItem.label}
+            {menuItem.children && menuItem.children.length > 0 && (
+              <ChevronDown height={24} />
+            )}
           </a>
+          {menuItem.children && menuItem.children.length > 0 && (
+            <div className={styles.subMenu}>
+              <ul>{menuItem.children.map(renderMenuItems)}</ul>
+            </div>
+          )}
         </li>
       );
     },

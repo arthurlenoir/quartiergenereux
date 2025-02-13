@@ -84,10 +84,53 @@
   font-weight: 600;
   white-space: nowrap;
   margin: 0 8px;
+  position: relative;
+}
+
+.mainMenu ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 .mainMenu ul li.active {
   font-weight: 900;
+}
+
+.mainMenu ul li .subMenu {
+  position: absolute;
+  top: 100%;
+  right: -4px;
+  min-width: 100%;
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height ease-in-out 200ms;
+  padding: 16px 4px 4px;
+}
+
+.mainMenu ul li .subMenu ul {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  margin: 0;
+}
+.mainMenu ul li:hover .subMenu {
+  height: auto;
+}
+
+.mainMenu ul li .subMenu li {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.mainMenu ul li .subMenu li a {
+  padding: 8px 16px;
 }
 
 .logo {
@@ -119,6 +162,12 @@
 .mobileMenu ul li a {
   display: block;
   padding: 8px 16px;
+}
+.mobileMenu ul li a > svg {
+  display: none;
+}
+.mobileMenu ul li .subMenu {
+  padding: 0 0 8px 16px;
 }
 .mobileMenuToggle {
   display: none;
@@ -167,8 +216,8 @@
     width: 24px;
     height: 3px;
     margin-top: 10px;
-    background-color: #15141A;
-    box-shadow: 0 -7px 0 0 #15141A;
+    background-color: #15141a;
+    box-shadow: 0 -7px 0 0 #15141a;
     border-radius: 2px;
     transition: transform ease-in-out 200ms, box-shadow ease-in-out 200ms;
   }
@@ -178,13 +227,13 @@
     width: 24px;
     height: 3px;
     margin-top: 4px;
-    background-color: #15141A;
+    background-color: #15141a;
     border-radius: 2px;
     transition: transform ease-in-out 200ms, margin-top ease-in-out 200ms;
   }
   .mobileMenuToggle.open::before {
     transform: rotate(45deg);
-    box-shadow: 0 0 0 0 #15141A;
+    box-shadow: 0 0 0 0 #15141a;
   }
   .mobileMenuToggle.open::after {
     transform: rotate(-45deg);
