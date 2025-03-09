@@ -26,12 +26,15 @@ type WPMenu = {
 };
 
 const parseMenuItems = (menuItems: MenuItem[]) => {
-  const menuItemByParentId = menuItems.reduce((acc, menuItem) => {
-    if (menuItem.parentId) {
-      acc[menuItem.parentId] = [...(acc[menuItem.parentId] ?? []), menuItem];
-    }
-    return acc;
-  }, []);
+  const menuItemByParentId = menuItems.reduce(
+    (acc: Partial<Record<string, MenuItem[]>>, menuItem) => {
+      if (menuItem.parentId) {
+        acc[menuItem.parentId] = [...(acc[menuItem.parentId] ?? []), menuItem];
+      }
+      return acc;
+    },
+    {}
+  );
   return menuItems.reduce((acc: MenuItem[], menuItem) => {
     if (menuItem.parentId) return acc;
     if (menuItemByParentId[menuItem.id]) {
