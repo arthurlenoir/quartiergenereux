@@ -7,14 +7,16 @@ export const PetitionTerrasse: React.FC = () => {
     <div className={styles.container}>
       <h2>Une terrasse pour le QG !</h2>
       <p>
-        Dès son ouverture le QG a tenté d'obtenir un droit de terrasse.
-        D'ailleurs <b>notre bail nous y autorise</b> et notre emplacement rend
-        son installation possible. En février 2023,{" "}
-        <b>la ville de Montpellier nous informe d'un refus administratif</b>{" "}
+        Dès son ouverture le QG a tenté d&apos;obtenir un droit de terrasse.
+        D&apos;ailleurs <b>notre bail nous y autorise</b> et notre emplacement
+        rend son installation possible. En février 2023,{" "}
+        <b>
+          la ville de Montpellier nous informe d&apos;un refus administratif
+        </b>{" "}
         sans même un passage de notre dossier en commission. Le motif invoqué
         est froid, robotique et un peu hors-sol : Le Quartier Généreux ne
         dispose pas de numéro Kbis (non attribué aux associations) et ne peut
-        donc pas disposer d'un droit de terrasse.
+        donc pas disposer d&apos;un droit de terrasse.
       </p>
 
       <p>
@@ -32,7 +34,9 @@ export const PetitionTerrasse: React.FC = () => {
         >
           Je signe la pétition
         </a>
-        <div className={styles.subButton}>Déjà plus de 2 000 signatures, On compte sur vous !</div>
+        <div className={styles.subButton}>
+          Déjà plus de 2 100 signatures, On compte sur vous !
+        </div>
       </div>
     </div>
   );
