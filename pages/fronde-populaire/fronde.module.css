@@ -1,8 +1,8 @@
 .root {
-  background-image: url("/fronde/background.webp");
+  background-image: url("/fronde/sete.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: center top;
   background-attachment: fixed;
 
   height: 100vh;
@@ -66,16 +66,44 @@
 }
 
 .main {
-  background-color: rgba(255, 255, 255, 0.72);
-  min-height: calc(100vh - 300px);
+  /*background-color: rgba(255, 255, 255, 0.72);*/
+  background-color: rgba(0, 0, 33, 0.18);
+  min-height: calc(100vh - 340px);
   backdrop-filter: blur(10px);
+  background-image: url("/fronde/phare.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+  display: flex;
 }
 
 .mainContainer {
-  padding: 40px 20px 0;
+  padding: 40px 80px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.date {
+.description {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 300px;
+  color: white;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
+}
+
+.moreInfo {
+  font-size: 26px;
+  margin: 0;
+  color: white;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
+}
+.date,
+.edition {
   font-weight: bold;
   text-transform: uppercase;
   color: white;
@@ -96,6 +124,21 @@
     margin: 0 -10px;
     z-index: -1;
   }
+}
+
+.edition {
+  margin: -18px 0 18px;
+  font-size: 24px;
+}
+
+.subTitle {
+  background-color: #e50053;
+  border: 2px solid white;
+  color: white;
+  padding: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 4px 8px;
 }
 
 .lieuEtHeure {

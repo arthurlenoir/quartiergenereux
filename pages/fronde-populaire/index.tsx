@@ -30,7 +30,7 @@ const FrondePopulaire: React.FC = () => {
           property="og:url"
           content={`https://quartiergenereux.fr/fronde-populaire`}
         />
-        <meta property="og:image" content="/fronde/preview.webp" />
+        <meta property="og:image" content="/fronde/preview.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -46,28 +46,33 @@ const FrondePopulaire: React.FC = () => {
       <div className={styles.root}>
         <header className={styles.header}>
           <div className={`${styles.mainHeader} ${styles.container}`}>
-            <div className={styles.date}>30 Novembre</div>
+            <div className={styles.date}>le 4 Mai 2025</div>
             <Image
               src="/fronde/titre.webp"
-              style={{ maxWidth: "100%", height: "auto", margin: "0 auto" }}
+              style={{
+                maxWidth: "90%",
+                width: 600,
+                height: "auto",
+                margin: "0 auto",
+              }}
               width="1170"
               height="175"
               alt="La Fronde Populaire !"
             />
-            <p>
-              Dans l’Hérault, organisons la
-              <br /> riposte face à l’extrême droite
-            </p>
+            <div className={styles.edition}>seconde édition</div>
+            <div className={styles.subTitle}>
+              vaincre les peurs & renverser la vapeur !
+            </div>
           </div>
 
           <div className={styles.container}>
             <div className={styles.lieuEtHeure}>
               <div className={styles.lieu}>
                 <RoomIcon />
-                Montarnaud - Macondo
+                Sète - Salle Georges Brassens
               </div>
               <div className={styles.heure}>
-                9h30-21h
+                9h30-22h
                 <AccessTimeIcon />
               </div>
             </div>
@@ -75,6 +80,14 @@ const FrondePopulaire: React.FC = () => {
         </header>
         <main className={styles.main}>
           <div className={`${styles.container} ${styles.mainContainer}`}>
+            <div className={styles.description}>
+              ensemble, des 4 coins de l’Hérault, retrouvons-nous lors d’une
+              journée de formation, de cohésion et d’information pour organiser
+              la riposte face à l’extrême droite
+            </div>
+            <div className={styles.moreInfo}>plus d’infos très bientôt !</div>
+          </div>
+          {/*<div className={`${styles.container} ${styles.mainContainer}`}>
             <h2>Accueil</h2>
             <h3>Accueil avec Café et autres boissons chaudes à partir de 9h30</h3>
             <br />
@@ -367,7 +380,7 @@ const FrondePopulaire: React.FC = () => {
               alt="Organisateurs et organisatrices de l'évènement : Nadia Belaouni, Gabriel Blasco, Sylvain Carrière, Magali Crozier, Sébastien Rome."
               className={styles.orgaImage}
             />
-          </div>
+          </div>*/}
         </main>
       </div>
     </>
