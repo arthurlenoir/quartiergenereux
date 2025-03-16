@@ -13,7 +13,7 @@ const FrondePopulaire: React.FC = () => {
     <>
       <Head>
         <title>
-          Fronde Populaire : Organisons la riposte contre l&apos;extrême droite
+          Fronde Populaire : Organisons la riposte contre l&apos;extrême droite
           dans l&apos;Hérault
         </title>
         <meta
@@ -23,14 +23,14 @@ const FrondePopulaire: React.FC = () => {
         <link rel="icon" href="/favicon.ico" />
         <meta
           property="og:title"
-          content="Fronde Populaire : Organisons la riposte contre l'extrême droite dans l'Hérault"
+          content="Fronde Populaire : Organisons la riposte contre l'extrême droite dans l'Hérault"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
           content={`https://quartiergenereux.fr/fronde-populaire`}
         />
-        <meta property="og:image" content="/fronde/preview.png" />
+        <meta property="og:image" content="/fronde/preview.webp" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -46,33 +46,28 @@ const FrondePopulaire: React.FC = () => {
       <div className={styles.root}>
         <header className={styles.header}>
           <div className={`${styles.mainHeader} ${styles.container}`}>
-            <div className={styles.date}>le 4 Mai 2025</div>
+            <div className={styles.date}>30 Novembre</div>
             <Image
               src="/fronde/titre.webp"
-              style={{
-                maxWidth: "90%",
-                width: 600,
-                height: "auto",
-                margin: "0 auto",
-              }}
+              style={{ maxWidth: "100%", height: "auto", margin: "0 auto" }}
               width="1170"
               height="175"
               alt="La Fronde Populaire !"
             />
-            <div className={styles.edition}>seconde édition</div>
-            <div className={styles.subTitle}>
-              vaincre les peurs & renverser la vapeur !
-            </div>
+            <p>
+              Dans l’Hérault, organisons la
+              <br /> riposte face à l’extrême droite
+            </p>
           </div>
 
           <div className={styles.container}>
             <div className={styles.lieuEtHeure}>
               <div className={styles.lieu}>
                 <RoomIcon />
-                Sète - Salle Georges Brassens
+                Montarnaud - Macondo
               </div>
               <div className={styles.heure}>
-                9h30-22h
+                9h30-21h
                 <AccessTimeIcon />
               </div>
             </div>
@@ -80,19 +75,6 @@ const FrondePopulaire: React.FC = () => {
         </header>
         <main className={styles.main}>
           <div className={`${styles.container} ${styles.mainContainer}`}>
-            <div className={styles.description}>
-              ensemble, des 4 coins de l’Hérault, retrouvons-nous lors d’une
-              journée de formation, de cohésion et d’information pour organiser
-              la riposte face à l’extrême droite
-            </div>
-            <a
-              href="https://www.helloasso.com/associations/le-quartier-genereux/evenements/fronde-populaire-2"
-              className={styles.btn}
-            >
-              Je m&apos;inscris !
-            </a>
-          </div>
-          {/*<div className={`${styles.container} ${styles.mainContainer}`}>
             <h2>Accueil</h2>
             <h3>Accueil avec Café et autres boissons chaudes à partir de 9h30</h3>
             <br />
@@ -110,7 +92,7 @@ const FrondePopulaire: React.FC = () => {
               href="https://www.helloasso.com/associations/le-quartier-genereux/evenements/fronde-populaire"
               className={styles.btn}
             >
-              Je m&apos;inscris !
+              Je m&apos;inscris !
             </a>
             <h2>Tables-rondes</h2>
             <div className={styles.tablesRondes}>
@@ -245,7 +227,7 @@ const FrondePopulaire: React.FC = () => {
               href="https://www.helloasso.com/associations/le-quartier-genereux/evenements/fronde-populaire"
               className={styles.btn}
             >
-              Je m&apos;inscris !
+              Je m&apos;inscris !
             </a>
             <div className={styles.ateliers}>
               <a
@@ -268,7 +250,7 @@ const FrondePopulaire: React.FC = () => {
               href="https://www.helloasso.com/associations/le-quartier-genereux/evenements/fronde-populaire"
               className={styles.btn}
             >
-              Je m&apos;inscris !
+              Je m&apos;inscris !
             </a>
             <div className={styles.col2}>
               <div>
@@ -294,7 +276,7 @@ const FrondePopulaire: React.FC = () => {
                   </a>
                   <br />À Bel air, prendre la route de Murviel les Montpellier
                   (D102), panneau indicateur &ldquo;MACONDO&rdquo; peu après le
-                  DOMAINE DES 4 PILAS.
+                  DOMAINE DES 4 PILAS.
                 </p>
               </div>
 
@@ -336,7 +318,7 @@ const FrondePopulaire: React.FC = () => {
               href="https://www.helloasso.com/associations/le-quartier-genereux/evenements/fronde-populaire"
               className={styles.btn}
             >
-              Je m&apos;inscris !
+              Je m&apos;inscris !
             </a>
             <div className={`${styles.col2} ${styles.footerContainer}`}>
               <p className={styles.footer}>
@@ -385,7 +367,7 @@ const FrondePopulaire: React.FC = () => {
               alt="Organisateurs et organisatrices de l'évènement : Nadia Belaouni, Gabriel Blasco, Sylvain Carrière, Magali Crozier, Sébastien Rome."
               className={styles.orgaImage}
             />
-          </div>*/}
+          </div>
         </main>
       </div>
     </>
