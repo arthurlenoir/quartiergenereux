@@ -60,9 +60,6 @@ const FrondePopulaire: React.FC = () => {
               alt="La Fronde Populaire !"
             />
             <div className={styles.edition}>seconde édition</div>
-            <div className={styles.subTitle}>
-              vaincre les peurs & renverser la vapeur !
-            </div>
           </div>
 
           <div className={styles.container}>
@@ -80,11 +77,16 @@ const FrondePopulaire: React.FC = () => {
         </header>
         <main className={styles.main}>
           <div className={`${styles.container} ${styles.mainContainer}`}>
-            <div className={styles.description}>
-              ensemble, des 4 coins de l’Hérault, retrouvons-nous lors d’une
-              journée de formation, de cohésion et d’information pour organiser
-              la riposte face à l’extrême droite
+            <div className={styles.subTitle}>
+              vaincre les peurs & renverser la vapeur !
             </div>
+            
+              <div className={styles.description}>
+                ensemble, des 4 coins de l’Hérault, retrouvons-nous lors d’une
+                journée de formation, de cohésion et d’information pour
+                organiser la riposte face à l’extrême droite
+              </div>
+
             <a
               href="https://www.helloasso.com/associations/le-quartier-genereux/evenements/fronde-populaire-2"
               className={styles.btn}
