@@ -85,8 +85,9 @@
   backdrop-filter: blur(8px);
   background-image: url("/fronde/phare.svg");
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 40%;
   background-position: right bottom;
+  background-attachment: fixed;
   display: flex;
 }
 
