@@ -35,7 +35,7 @@ export const PetitionTerrasse: React.FC = () => {
           Je signe la pétition
         </a>
         <div className={styles.subButton}>
-          Déjà plus de 2 200 signatures, On compte sur vous !
+          Déjà plus de 2 300 signatures, On compte sur vous !
         </div>
       </div>
     </div>

@@ -41,7 +41,7 @@
   font-weight: bold;
   text-align: center;
   backdrop-filter: blur(4px);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   /*&:before {
     content: "";
     display: block;
@@ -79,13 +79,13 @@
 }
 
 .main {
-  /*background-color: rgba(255, 255, 255, 0.72);*/
+  background-color: rgba(255, 255, 255, 0.72);
   /*background-color: rgba(0, 0, 33, 0.18);*/
   min-height: calc(100vh - 340px);
   backdrop-filter: blur(8px);
   background-image: url("/fronde/phare.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 50%;
   background-position: right bottom;
   display: flex;
 }
@@ -354,7 +354,7 @@ b.btn:visited {
   color: white;
   font-size: 20px;
   border-radius: 45px;
-  margin: 24px auto;
+  margin: 12px auto 36px;
 }
 
 .orga {

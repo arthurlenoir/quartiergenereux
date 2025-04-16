@@ -42,6 +42,10 @@ const FrondePopulaire: React.FC = () => {
           href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
         />
+        <script
+          src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
+          async
+        ></script>
       </Head>
       <div className={styles.root}>
         <header className={styles.header}>
@@ -77,22 +81,154 @@ const FrondePopulaire: React.FC = () => {
         </header>
         <main className={styles.main}>
           <div className={`${styles.container} ${styles.mainContainer}`}>
-            <div className={styles.subTitle}>
-              vaincre les peurs & renverser la vapeur !
-            </div>
-            
-              <div className={styles.description}>
-                ensemble, des 4 coins de l’Hérault, retrouvons-nous lors d’une
-                journée de formation, de cohésion et d’information pour
-                organiser la riposte face à l’extrême droite
-              </div>
+            <div className={`max-w-4xl mx-auto p-6 space-y-8`}>
+              <h1 className="text-4xl font-bold">
+                🥁 La Fronde Populaire – 4 mai à Sète
+              </h1>
+              <p className="text-lg">
+                Une journée pour se retrouver, se former, échanger et
+                s’organiser face à la montée de l’extrême droite.
+              </p>
+              <a
+                href="https://www.helloasso.com/associations/le-quartier-genereux/evenements/fronde-populaire-2"
+                className={styles.btn}
+              >
+                Je m&apos;inscris !
+              </a>
 
-            <a
-              href="https://www.helloasso.com/associations/le-quartier-genereux/evenements/fronde-populaire-2"
-              className={styles.btn}
-            >
-              Je m&apos;inscris !
-            </a>
+              <section>
+                <h2 className="text-2xl font-semibold">📍 Infos pratiques</h2>
+                <ul className="list-disc list-inside">
+                  <li>
+                    <strong>Date :</strong> Samedi 4 mai 2025
+                  </li>
+                  <li>
+                    <strong>Accueil :</strong> à partir de 9h30
+                  </li>
+                  <li>
+                    <strong>Lieu :</strong>{" "}
+                    <a href="https://maps.app.goo.gl/wB2GPbdbSEd9w1HE6">
+                      Nouvelle Salle Georges Brassin · Sète
+                    </a>
+                  </li>
+                  <li>
+                    <strong>Restauration :</strong> sur place le midi
+                  </li>
+                  <li>
+                    <strong>Concert en soirée :</strong> Pitch Up & DJ Adroner !
+                  </li>
+                </ul>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold">
+                  🗣️ Matinée – Plénière d’ouverture
+                </h2>
+                <p>À 10h, on ouvre la journée avec une grande plénière :</p>
+                <ul className="list-disc list-inside">
+                  <li>
+                    <strong>Safia Dahani</strong> – Chercheuse en science
+                    politique et en sociologie, spécialiste du Rassemblement
+                    National
+                  </li>
+                  <li>
+                    <strong>Mathilde Imer</strong> – Du Labo des PARTIS (à
+                    confirmer)
+                  </li>
+                </ul>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold">
+                  🛠️ Après-midi – Ateliers et mises en action
+                </h2>
+                <p>
+                  Des ateliers participatifs pour se former, s’outiller et
+                  s’organiser :
+                </p>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>
+                    🎭 Théâtre forum : Conversations efficaces face aux discours
+                    du RN
+                  </li>
+                  <li>
+                    🌐 Réseaux sociaux : Méthodes de l’extrême droite et riposte
+                    en ligne
+                  </li>
+                  <li>
+                    💆 Et toi, comment ça va avec tout ça ? Atelier de soin des
+                    émotions et des luttes
+                  </li>
+                  <li>
+                    🗳️ Abstention & classes populaires : lutter localement
+                    contre la mal-inscription
+                  </li>
+                  <li>
+                    🎨 Visuels partout, Fachos nulle part ! Atelier de comm’
+                    visuelle
+                  </li>
+                  <li>🎥 Monter une vidéo en 15 minutes</li>
+                  <li>
+                    🏛️ Démarches citoyennes locales : leviers contre l’extrême
+                    droite
+                  </li>
+                  <li>
+                    ...Et d’autres en cours de programmation (sociologie
+                    électorale, sécurité, observatoire de l’extrême droite,
+                    mobilité & isolement)
+                  </li>
+                </ul>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold">
+                  🎲 Pour les joueur·euses…
+                </h2>
+                <p>
+                  <strong>Panique fasciste</strong> : un jeu de rôle immersif
+                  pour expérimenter les mécanismes autoritaires et créer des
+                  résistances collectives.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold">
+                  🎭 Art et culture en soutien
+                </h2>
+                <ul className="list-disc list-inside">
+                  <li>Une surprise artistique à midi</li>
+                  <li>Concert de clôture : Pitch Up & DJ Adroner</li>
+                </ul>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold">🧭 Pourquoi venir ?</h2>
+                <p>
+                  Parce qu’on est plus fort·es ensemble.
+                  <br />
+                  Parce que la montée de l’extrême droite n’est pas une
+                  fatalité.
+                  <br />
+                  Parce que nous avons des savoirs, des envies, des expériences
+                  à partager.
+                  <br />
+                  Et surtout, parce qu’on veut organiser l’espoir.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold">
+                  👉 Rejoignez La Fronde Populaire !
+                </h2>
+
+                <a
+                  href="https://www.helloasso.com/associations/le-quartier-genereux/evenements/fronde-populaire-2"
+                  className={styles.btn}
+                >
+                  Je m&apos;inscris !
+                </a>
+              </section>
+            </div>
           </div>
           {/*<div className={`${styles.container} ${styles.mainContainer}`}>
             <h2>Accueil</h2>
