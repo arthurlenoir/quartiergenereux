@@ -124,81 +124,146 @@ const FrondePopulaire: React.FC = () => {
                 <h2 className="text-2xl font-semibold">
                   🗣️ Matinée – Plénière d’ouverture
                 </h2>
-                <p>À 10h, on ouvre la journée avec une grande plénière :</p>
-                <ul className="list-disc list-inside">
-                  <li>
-                    <strong>Safia Dahani</strong> – Chercheuse en science
-                    politique et en sociologie, spécialiste du Rassemblement
-                    National
-                  </li>
-                  <li>
-                    <strong>Mathilde Imer</strong> – Du Labo des PARTIS (à
-                    confirmer)
-                  </li>
-                </ul>
+                <div className={styles.conferences}>
+                  <figure>
+                    <Image
+                      src="/fronde/programme-2/conference.png"
+                      width="500"
+                      height="374"
+                      alt="Conférence “Élu·es et électeur·rices du RN : ressemblances et différences”"
+                    />
+                  </figure>
+                </div>
               </section>
 
               <section>
                 <h2 className="text-2xl font-semibold">
                   🛠️ Après-midi – Ateliers et mises en action
                 </h2>
-                <p>
-                  Des ateliers participatifs pour se former, s’outiller et
-                  s’organiser :
-                </p>
-                <ul className="list-disc list-inside space-y-2">
-                  <li>
-                    🎭 Théâtre forum : Conversations efficaces face aux discours
-                    du RN
-                  </li>
-                  <li>
-                    🌐 Réseaux sociaux : Méthodes de l’extrême droite et riposte
-                    en ligne
-                  </li>
-                  <li>
-                    💆 Et toi, comment ça va avec tout ça ? Atelier de soin des
-                    émotions et des luttes
-                  </li>
-                  <li>
-                    🗳️ Abstention & classes populaires : lutter localement
-                    contre la mal-inscription
-                  </li>
-                  <li>
-                    🎨 Visuels partout, Fachos nulle part ! Atelier de comm’
-                    visuelle
-                  </li>
-                  <li>🎥 Monter une vidéo en 15 minutes</li>
-                  <li>
-                    🏛️ Démarches citoyennes locales : leviers contre l’extrême
-                    droite
-                  </li>
-                  <li>
-                    ...Et d’autres en cours de programmation (sociologie
-                    électorale, sécurité, observatoire de l’extrême droite,
-                    mobilité & isolement)
-                  </li>
-                </ul>
-              </section>
 
-              <section>
-                <h2 className="text-2xl font-semibold">
-                  🎲 Pour les joueur·euses…
-                </h2>
-                <p>
-                  <strong>Panique fasciste</strong> : un jeu de rôle immersif
-                  pour expérimenter les mécanismes autoritaires et créer des
-                  résistances collectives.
-                </p>
+                <div className={styles.ateliers}>
+                  <figure>
+                    <Image
+                      src="/fronde/programme-2/theatre-forum.png"
+                      width="500"
+                      height="374"
+                      alt="Comment débattre avec des électeurs du RN ? Théâtre forum pour des conversations efficaces"
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      src="/fronde/programme-2/on-vous-voit.png"
+                      width="500"
+                      height="374"
+                      alt="Extrême droite dans l'Hérault, on vous voit !"
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      src="/fronde/programme-2/abstention.png"
+                      width="500"
+                      height="374"
+                      alt="Que faire contre l'abstention ? Premier parti de France chez les classes populaires"
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      src="/fronde/programme-2/emotions.png"
+                      width="500"
+                      height="374"
+                      alt="Et toi comment ça va avec tout ça ? Cercle de parole pour prendre soin de son système nerveux, de ses émotions et de ses luttes."
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      src="/fronde/programme-2/programme-NFP.png"
+                      width="500"
+                      height="374"
+                      alt="Quels collectifs en lutte sur le territoire ? Venez rendre visibles vos groupes militants du département ! Pour se rencontrer, créer du lien ou s'engager !"
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      src="/fronde/programme-2/ecologie-populaire.png"
+                      width="500"
+                      height="374"
+                      alt="De la tranquillité publique à la sécurité sanitaire"
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      src="/fronde/programme-2/visuels-partout-fachos-nulle-part.png"
+                      width="500"
+                      height="374"
+                      alt="Visuels partout, fachos nulle part ! fabriquer, imprimer et placarder nos valeurs : mode d'emploi."
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      src="/fronde/programme-2/metropolisation.png"
+                      width="500"
+                      height="374"
+                      alt="Mobilité et transition écologique : construire des solutions exigeantes et cohérentes !"
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      src="/fronde/programme-2/AT-demarches-citoyennes.png"
+                      width="500"
+                      height="374"
+                      alt="Les démarches citoyennes locales : une opportunité pour lutter contre l'extrême droite !"
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      src="/fronde/programme-2/AT-photo.png"
+                      width="500"
+                      height="374"
+                      alt="Réseaux sociaux : les méthodes de l'extrême droite et comment lutter sur la toile ?"
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      src="/fronde/programme-2/AT-video.png"
+                      width="500"
+                      height="374"
+                      alt="La question sociale, rien que la question sociale : comment mener des luttes efficaces sur sa commune, notamment sur le logement ?"
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      src="/fronde/programme-2/panique-fasciste.png"
+                      width="500"
+                      height="374"
+                      alt="Jeu de rôle : « Panique fasciste ». Le pôle Riposte Généreuse du Quartier Généreux propose un jeu collaboratif et immersif pour élaborer des stratégies de résistance face au fascisme, inspirées de situations réelles. "
+                    />
+                  </figure>
+                </div>
               </section>
 
               <section>
                 <h2 className="text-2xl font-semibold">
                   🎭 Art et culture en soutien
                 </h2>
-                <ul className="list-disc list-inside">
-                  <li>Une surprise artistique à midi</li>
-                  <li>Concert de clôture : Pitch Up & DJ Adroner</li>
-                </ul>
+
+                <div className={styles.ateliers}>
+                  <figure>
+                    <Image
+                      src="/fronde/programme-2/pitch-up.png"
+                      width="500"
+                      height="625"
+                      alt="chanteuse et toasteuse survoltée, Pitch Up évolue depuis plus de 10 ans au sein du groupe de reggae Irie Jahzz. Plus récemment, elle intègre le collectif Women Soldier. En groupe ou en solo, elle rayonne par son énergie communicative et ses textes au service de messages engagés"
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      src="/fronde/programme-2/adroner.png"
+                      width="500"
+                      height="625"
+                      alt="DJ et producteur résident à Sète, Adroner se distingue par des sets éclectiques mêlant afro-house, hip-hop, shatta et drum and bass. évoluant des scènes locales aux dancefloors de Brooklyn et Londres, Il crée son émission radio Shook Twice et fonde la plateforme Grow Underground, dédiée à la promotion de la scène musicale émergente"
+                    />
+                  </figure>
+                </div>
               </section>
 
               <section>
