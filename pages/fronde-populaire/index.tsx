@@ -100,7 +100,7 @@ const FrondePopulaire: React.FC = () => {
                 <h2 className="text-2xl font-semibold">📍 Infos pratiques</h2>
                 <ul className="list-disc list-inside">
                   <li>
-                    <strong>Date :</strong> Samedi 4 mai 2025
+                    <strong>Date :</strong> Dimanche 4 mai 2025
                   </li>
                   <li>
                     <strong>Accueil :</strong> à partir de 9h30
