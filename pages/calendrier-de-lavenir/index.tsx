@@ -504,7 +504,8 @@ export default function CalendrierDeLavenir({ menu }: PageProps) {
                 flipCardRef.current.style.transform = 'rotateX(180deg)'
               }
               if (answerContentRef.current) {
-                answerContentRef.current.style.transform = 'scale(0.3)'
+                const ratio = answerRef.current.clientWidth / mainContainerRef.current.clientWidth;
+                answerContentRef.current.style.transform = `scale(${ratio})`
                 answerContentRef.current.style.transformOrigin = '0 0'
               }
 
@@ -525,7 +526,7 @@ export default function CalendrierDeLavenir({ menu }: PageProps) {
                   answerContentRef.current.style.transform = 'scale(1)'
                   answerContentRef.current.style.transformOrigin = '0 0'
                 }
-              }, 500);
+              }, 400);
 
             });
           });
