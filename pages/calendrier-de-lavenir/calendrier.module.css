@@ -1,0 +1,128 @@
+.calendrier {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 32px 0;
+  position: relative;
+}
+
+.clickAway {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s ease-in-out, z-index 0 ease-in-out 0.2s;
+}
+.clickAway.hidden {
+  background-color: rgba(0, 0, 0, 0);
+  z-index: -1;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.currentAnswer {
+  overflow: hidden;
+  z-index: 250;
+  font-weight: 500;
+  position: fixed;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out,
+    width 0.2s ease-in-out, left 0.2s ease-in-out, top 0.2s ease-in-out;
+}
+
+.currentAnswer .answerContent {
+  padding: 32px 24px;
+  font-size: 20px;
+  color: white;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.currentAnswer .answerContent a,
+.currentAnswer .answerContent a:visited {
+  color: #fbe252;
+}
+
+.currentAnswer .answerContent a:hover {
+  color: #fbe252;
+}
+
+.questionInAnswer,
+.question {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.question {
+  flex: 1 0 300px;
+  max-width: 350px;
+  aspect-ratio: 1 / 1;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.question::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.2s ease-in-out;
+}
+.question:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45);
+}
+.question:nth-child(2n) {
+  background-color: var(--tertiary);
+}
+.question:nth-child(2n + 1) {
+  background-color: var(--primary);
+}
+
+.questionNumber {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.question .questionContent,
+.questionInAnswer {
+  font-size: 22px;
+  font-weight: bold;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  text-align: left;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #fbe252;
+  transition: color 0.2s ease-in-out;
+}
+
+.question .questionContent .whatIf,
+.questionInAnswer .whatIf {
+  color: white;
+}
+
+.answer {
+  display: none;
+}
+
+.question:hover::before {
+  background-color: rgba(255, 255, 255, 0.05);
+}
