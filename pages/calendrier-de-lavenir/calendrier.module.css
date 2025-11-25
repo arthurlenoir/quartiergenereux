@@ -18,6 +18,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   transition: background-color 0.2s ease-in-out, z-index 0 ease-in-out 0.2s;
 }
+
 .clickAway.hidden {
   background-color: rgba(0, 0, 0, 0);
   z-index: -1;
@@ -25,30 +26,79 @@
 }
 
 .currentAnswer {
-  overflow: hidden;
+  overflow: visible;
   z-index: 250;
   font-weight: 500;
   position: fixed;
   opacity: 0;
-  transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out,
-    width 0.2s ease-in-out, left 0.2s ease-in-out, top 0.2s ease-in-out;
+  perspective: 1000px;
+}
+
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+
+.flipCardFront,
+.flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flipCardBack {
+  transform: rotateX(180deg);
+  background-color: #FBF9F5;
+  overflow: hidden;
 }
 
 .currentAnswer .answerContent {
   padding: 32px 24px;
   font-size: 20px;
-  color: white;
+  color: black;
   max-height: 90vh;
   overflow-y: auto;
+  width: 100vw;
+  max-width: 1000px;
+  transition: transform 0.5s ease-in-out;
 }
+
+.blur {
+  pointer-events: none;
+  user-select: none;
+}
+
+.blur>div {
+  filter: blur(6px);
+}
+.blur>div:first-child {
+  filter: none;
+}
+
+.currentAnswer .answerContent ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 16px 0;
+  gap: 8px;
+}
+
 
 .currentAnswer .answerContent a,
 .currentAnswer .answerContent a:visited {
-  color: #fbe252;
+  color: #d6b912;
 }
 
 .currentAnswer .answerContent a:hover {
-  color: #fbe252;
+  color: #d6b912;
 }
 
 .questionInAnswer,
@@ -58,10 +108,8 @@
   margin-top: 0;
 }
 
-.question {
-  flex: 1 0 300px;
-  max-width: 350px;
-  aspect-ratio: 1 / 1;
+.question,
+.flipCardFront {
   padding: 32px 24px;
   display: flex;
   flex-direction: column;
@@ -70,9 +118,16 @@
   color: white;
   text-align: center;
   cursor: pointer;
+}
+
+.question {
+  flex: 1 0 300px;
+  max-width: 350px;
+  aspect-ratio: 1 / 1;
   position: relative;
   transition: box-shadow 0.2s ease-in-out;
 }
+
 .question::before {
   content: "";
   position: absolute;
@@ -82,12 +137,15 @@
   height: 100%;
   transition: background-color 0.2s ease-in-out;
 }
+
 .question:hover {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45);
 }
+
 .question:nth-child(2n) {
   background-color: var(--tertiary);
 }
+
 .question:nth-child(2n + 1) {
   background-color: var(--primary);
 }
@@ -99,7 +157,7 @@
 }
 
 .question .questionContent,
-.questionInAnswer {
+.flipCardFront .questionContent {
   font-size: 22px;
   font-weight: bold;
   flex: 1;
@@ -115,7 +173,7 @@
 }
 
 .question .questionContent .whatIf,
-.questionInAnswer .whatIf {
+.flipCardFront .whatIf {
   color: white;
 }
 
