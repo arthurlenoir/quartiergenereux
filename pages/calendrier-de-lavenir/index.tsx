@@ -86,13 +86,13 @@ const content: CalendrierAvenir[] = [
               href="https://www.editionslesliensquiliberent.fr/livre-Au_commencement_%C3%A9tait-672-1-1-0-1.html"
               rel="noopener noreferrer"
             >
-              Au commencement était… Une nouvelle histoire de l'humanité - David GRAEBER &amp; David WENGROW
+              Au commencement était… Une nouvelle histoire de l&apos;humanité - David GRAEBER &amp; David WENGROW
             </a></li>
             <li><a
               href="https://www.editionspoints.com/ouvrage/zomia-ou-l-art-de-ne-pas-etre-gouverne-james-c-scott/9782757878231"
               rel="noopener noreferrer"
             >
-              Zomia ou l'art de ne pas être gouverné - James C. Scott
+              Zomia ou l&apos;art de ne pas être gouverné - James C. Scott
             </a></li>
             <li><a
               href="https://www.leseditionsdeminuit.fr/livre-La_Soci%C3%A9t%C3%A9_contre_l%E2%80%99%C3%89tat-1999-1-1-0-1.html"
@@ -286,7 +286,7 @@ const content: CalendrierAvenir[] = [
               href="https://www.radiofrance.fr/franceculture/podcasts/entendez-vous-l-eco/scop-les-salaries-au-pouvoir-4688813"
               rel="noopener noreferrer"
             >
-              "SCOP" : les salariés au pouvoir ! - Podcast France Culture
+              &quot;SCOP&quot; : les salariés au pouvoir ! - Podcast France Culture
             </a></li>
             <li><a
               href="https://www.les-scop.coop/"
@@ -328,7 +328,7 @@ const content: CalendrierAvenir[] = [
               href="https://www.radio.fr/podcast/qui-cest-qui-commande"
               rel="noopener noreferrer"
             >
-              Podcast « Qui c'est qui commande ? » - Lolita Rivé
+              Podcast « Qui c&apos;est qui commande ? » - Lolita Rivé
             </a></li>
           </ul>
         </p>
