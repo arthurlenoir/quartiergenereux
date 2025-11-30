@@ -75,12 +75,12 @@
   user-select: none;
 }
 
-.blur>div {
+/*.blur>div {
   filter: blur(6px);
 }
 .blur>div:first-child {
   filter: none;
-}
+}*/
 
 .currentAnswer .answerContent ul {
   list-style-type: none;
@@ -151,8 +151,8 @@
 }
 
 .questionNumber {
-  font-size: 40px;
-  font-weight: bold;
+  font-family: LilitaOne;
+  font-size: 36px;
   text-align: left;
 }
 
