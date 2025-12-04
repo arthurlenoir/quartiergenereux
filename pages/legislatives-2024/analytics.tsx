@@ -73,7 +73,7 @@ export default function Legislatives() {
   const mapContainer = useRef<HTMLDivElement>(null);
   const mapRef = useMap(mapContainer, onSelect);
 
-  const contoursLayer = useRef<VectorLayer<Feature<Geometry>>>();
+  const contoursLayer = useRef<VectorLayer<Feature<Geometry>>>(null);
   useEffect(() => {
     if (mapRef.current && boundaries) {
       let fitView = true;

@@ -1,3 +1,5 @@
+"use client";
+
 import { RefObject, useEffect, useLayoutEffect, useRef } from "react";
 
 import Map from "ol/Map.js";
@@ -16,11 +18,11 @@ import { FeaturePropertiesI } from "../types";
 const key = "EwRPN85pjdsExkykwgEW";
 
 export const useMap = (
-  mapContainer: RefObject<HTMLDivElement>,
+  mapContainer: RefObject<HTMLDivElement | null>,
   onSelect: (data: FeaturePropertiesI) => void
 ) => {
   //const [inseeData, setInseeData] = useState<any>(null);
-  const mapRef = useRef<Map>();
+  const mapRef = useRef<Map | null>(null);
 
   const onSelectRef = useRef(onSelect);
 

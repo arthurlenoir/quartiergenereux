@@ -4,6 +4,7 @@ import { parser } from "stream-json";
 import { pick } from "stream-json/filters/Pick";
 import { streamValues } from "stream-json/streamers/StreamValues";
 import { streamArray } from "stream-json/streamers/StreamArray";
+import { FeatureContoursI } from "../legislatives/types";
 const { disassembler } = require("stream-json/Disassembler");
 const Stringer = require("stream-json/jsonl/Stringer");
 const { stringer } = require("stream-json/Stringer");
@@ -27,7 +28,7 @@ const splitBoundariesPerDepartment = (dep: string) => {
     parser(),
     pick({ filter: "features" }),
     streamArray(),
-    ({ value }) => {
+    ({ value }: { value?: FeatureContoursI }) => {
       if (value?.properties?.codeDepartement) {
         if (value.properties.codeDepartement === dep) {
           console.log("yes");
@@ -35,7 +36,7 @@ const splitBoundariesPerDepartment = (dep: string) => {
         }
         // const writer = getWriter(data.properties.codeDepartement);
         //writer.write(JSON.stringify(data));
-      } else {
+      } else if (value) {
         console.log(JSON.stringify(Object.keys(value)));
       }
       return null;

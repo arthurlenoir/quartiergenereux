@@ -20,6 +20,8 @@ export interface CityPropertiesI {
   nom: string;
 
   id_bv: never;
+
+  codeDepartement?: never;
 }
 
 export interface DistrictPropertiesI {
@@ -30,6 +32,7 @@ export interface DistrictPropertiesI {
 
   nom: never;
   id_bv: never;
+  code?: never;
 }
 
 export type FeaturePropertiesI =
