@@ -1202,6 +1202,7 @@ export default function CalendrierDeLavenir() {
     setTimeout(() => {
       setCurrentDate(new Date());
     }, 10_000);
+    console.log(currentDate);
   }, [currentDate]);
 
   useEffect(() => {

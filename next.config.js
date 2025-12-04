@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 
-const withTM = require('next-transpile-modules')(['@piwikpro/next-piwik-pro'])
-
 const nextConfig = {
+  turbopack: {},
+  transpilePackages: ['@piwikpro/next-piwik-pro'],
   images: {
     unoptimized: true
   },
@@ -10,4 +10,4 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = withTM(nextConfig)
+module.exports = nextConfig
