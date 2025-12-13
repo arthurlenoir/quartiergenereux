@@ -799,7 +799,27 @@ const content: CalendrierAvenir[] = [
         <span className={style.whatIf}>Et si</span> on arrêtait d’obéir ?
       </p>
     ),
-    answer: <></>,
+    answer: (
+      <>
+        <p>
+          Zyed Benna et Bouna Traoré (27/10/2005), Rémi Fraisse (26/10/2014),
+          Adama Traoré (19/07/2016), Zineb Redouane (2/12/20218), Nahel Merzouk
+          (27/06/2023)...
+        </p>
+        <p>
+          S’ajoutent à cette liste de nombreux·ses autres mort·es et blessé·es
+          à cause d’interventions autoritaristes, violentes et souvent empruntes
+          de discriminations des forces de l’ordre.
+        </p>
+        <p>
+          Entre les violences, la chasse aux personnes étrangères, les contrôles
+          au faciès, les manifesations réprimées, la mission de la police et de
+          la gendarmerie est claire : maintenir la population en respect afin
+          qu’elle ne se révolte pas.
+        </p>
+        <p>Faisons-les échouer.</p>
+      </>
+    ),
   },
   {
     question: (
