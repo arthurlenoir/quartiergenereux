@@ -807,8 +807,8 @@ const content: CalendrierAvenir[] = [
           (27/06/2023)...
         </p>
         <p>
-          S’ajoutent à cette liste de nombreux·ses autres mort·es et blessé·es
-          à cause d’interventions autoritaristes, violentes et souvent empruntes
+          S’ajoutent à cette liste de nombreux·ses autres mort·es et blessé·es à
+          cause d’interventions autoritaristes, violentes et souvent empruntes
           de discriminations des forces de l’ordre.
         </p>
         <p>
@@ -828,7 +828,43 @@ const content: CalendrierAvenir[] = [
         banques ?
       </p>
     ),
-    answer: <></>,
+    answer: (
+      <>
+        <p>
+          Livret de développement durable et solidaire, Plan épargne logement,
+          contrat d&apos;assurance vie... Que devient notre argent
+          lorsqu&apos;il est placé dans une banque ? La majorité des banques ne
+          sont pas transparentes derrière leurs usages des fonds récoltés.
+        </p>
+        <p>
+          Avec une assurance vie, la banque achète des actions et cherche la
+          rentabilité à tout prix pour verser vos intérêts. C’est pourquoi les
+          banques cherchent à améliorer la valeur des actions et la pression des
+          actionnaires fait délocaliser des usines ou en fermer d’autres pas
+          assez rentable.
+        </p>
+        <p>
+          Pourtant des alternatives existent. Par exemple, la banque coopérative
+          La Nef utilise vos économies pour soutenir exclusivement des projets
+          dans les secteurs de l&apos;écologie, du social ou de la culture. Il
+          est aussi possible de directement soutenir des coopératives en
+          finançant des parts sociales ou des titres participatifs.
+        </p>
+        <p>Alors, prêt·es à faire tomber le système bancaire ?</p>
+        <div style={{ aspectRatio: "16/9", width: "100%" }}>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/XT3vXtOCeSs"
+            title="YouTube video player"
+            style={{ border: 0 }}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </>
+    ),
   },
   {
     question: (
@@ -848,6 +884,7 @@ const content: CalendrierAvenir[] = [
           l’autre comme l’origine de nos petites et grandes galères du
           quotidien.
         </p>
+
         <p>
           Si toi, comme l’autre, que tu accuses parfois de responsable, vivez
           ces mêmes galères, c’est parce que l’augmentation continue des
@@ -861,11 +898,8 @@ const content: CalendrierAvenir[] = [
           santé, où les habitants sont les plus heureux, où les taux de
           criminalité sont les plus faibles…
         </p>
-        <p>
-          Alors, plutôt que de continuer de se protéger, de s’enfermer ou
-          d’accuser son voisin, prônons plutôt une société moins inégalitaire
-          dans laquelle les rapports sociaux seraient enfin plus apaisés ?{" "}
-        </p>
+
+        <p>Alors, on s’attaque aux vrais responsables de tous nos maux ?</p>
 
         <p>
           Resources :
@@ -880,11 +914,14 @@ const content: CalendrierAvenir[] = [
             </li>
             <li>
               <a
-                href="https://fakirpresse.info/produit/legalite-cest-la-sante-et-lamour-aussi/"
+                href="https://www.editionslesliensquiliberent.fr/livre-Pour_vivre_heureux,_vivons_%C3%A9gaux_!-9791020906700-1-1-0-1.html"
                 rel="noopener noreferrer"
               >
-                L’égalité c’est la santé ! - François Ruffin
-              </a>
+                Pour vivre heureux, vivons égaux ! - Kate Pickett &amp; Richard
+                Wilkinson
+              </a>{" "}
+              <br /> Comment l&apos;égalité réduit le stress, préserve la santé
+              mentale et améliore le bien-être de tous
             </li>
           </ul>
         </p>
