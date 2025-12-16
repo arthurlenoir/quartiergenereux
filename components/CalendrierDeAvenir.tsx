@@ -1013,20 +1013,44 @@ const content: CalendrierAvenir[] = [
     answer: (
       <>
         <p>
-          Les billets de trains ne cessent d’augmenter et sans jamais être
-          questionnés. En plus, ils coûtent en moyenne 2,5 fois plus chers que
-          l’avion, indignons-nous ! Pour une mobilité douce accessible pour
-          tous·tes, le train devrait être un service public gratuit. Comment
-          justifier aujourd’hui à l’heure d’une extinction de masse à cause
-          d’une crise écologique massive que le train soit taxé et l’avion
-          subventionné ? Comment justifier que l’argent public paye le bitume
-          des autoroutes privées mais que les usagers de la SNCF financent les
-          rails par l’achat de billet de train plutôt que par leurs impôts ?
+          « Vous avez choisi le moyen de transport le plus écologique » dit la
+          voix dans le train, malheureusement, c’est également le transport le
+          moins économique ! Cherchez un billet d’avion moins cher que le train,
+          vous ne trouverez presque jamais. Comment justifier aujourd’hui, à
+          l’heure d’une extinction de masse et de la crise écologique que le
+          train ne soit pas plus subventionné quand l’avion l’est massivement ?
+          Comment justifier que l’argent public paye le bitume des
+          infrastructures routières alors que réseau ferré de France doit
+          pourvoir à l’essentiel de ses investissements, impactant les prix des
+          billets ?{" "}
+        </p>
+        <p>
+          Réchauffement climatique, disparition des espèces, pollution des eaux
+          et des sols, épuisement des ressources naturelles, déforestation,
+          zones inhabitables, impacts sur la santé… Depuis les années 70, les
+          scientifiques alertent sur les dangers de notre industrialisation et
+          notre consommation. Les petits gestes ne pourront pas changer la
+          trajectoire et culpabilisent plus qu’ils n’amène de transformations
+          structurelles. Il est temps qu’une politique radicale et décroissante
+          nous propose enfin des avenirs moins consommateurs de ressources et
+          désirables.
         </p>
 
+        <p>Alors, prêt·es à dézinguer les jets des milliardaires ?</p>
+
         <p>
-          Est-ce qu’on ne se battrait pas pour que l’Etat propose un transport
-          écologique ET économique ?
+          Pour aller plus loin :
+          <ul>
+            <li>
+              <a
+                href="https://bonpote.com/pourquoi-lavion-est-moins-cher-que-le-train-en-europe-et-comment-y-remedier/"
+                rel="noopener noreferrer"
+              >
+                Pourquoi l’avion est moins cher que le train en Europe (et
+                comment y remédier) ? · Bon pote
+              </a>
+            </li>
+          </ul>
         </p>
       </>
     ),
@@ -1040,23 +1064,59 @@ const content: CalendrierAvenir[] = [
     answer: (
       <>
         <p>
-          Malheureusement, on a déjà bien commencé, depuis 1970 la population
-          d’animaux sauvages vertébrés a diminué en moyenne de 73 %.
+          Malheureusement, on a déjà bien commencé ! Depuis 1970 les
+          températures surchauffent et les méga-feux couvrent la planète !
         </p>
 
         <p>
-          En 2025 le « jour du dépassement », soit le jour où nous dépassons la
-          limite annuelle de ce que la Terre produit comme ressources, a été le
-          24 juillet 2025.
+          Et si, au lieu de brûler la planète on cramait le système ? Le système
+          capitaliste ! Les plus grandes richesses accumulent toujours plus, se
+          transmettent leur patrimoine par héritage, achètent des médias pour
+          asseoir leur idéologie rance et tissent des réseaux de pouvoirs avec
+          les dirigeants du monde entier. Police et justice les protègent alors
+          que nous, on prend de la prison ferme pour un jet de peinture sur
+          Matignon et on nous fait la guerre à Saint Soline !
         </p>
         <p>
-          Le responsable de ce désastre a un nom : capitalisme. Au lieu de
-          cramer la planète, cramons tout ce système inégalitaire et injuste.
+          De l’argent pour financer des services publics de qualité et
+          réorienter les trajectoire écologique de la planète, il y en a.
         </p>
+        <p>Alors prêt·es à saboter et détruire le capitalisme ?</p>
+
         <p>
-          Prêt·es à rebâtir une société nouvelle sur les cendres du
-          capitalisme ?
+          Pour aller plus loin :
+          <ul>
+            <li>
+              <a
+                href="https://www.france.tv/france-2/cash-investigation/7790973-bernard-arnault-ombre-et-lumiere-d-un-empire.html"
+                rel="noopener noreferrer"
+              >
+                Bernard Arnault, ombre et lumière d&apos;un empire · Cash
+                Investigation
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://audreyvernon.com/spectacles/comment-epouser-un-milliardaire-11"
+                rel="noopener noreferrer"
+              >
+                Spectable « Comment épouser Un Milliardaire » · Audrey Vernon
+              </a>
+            </li>
+          </ul>
         </p>
+        <div style={{ aspectRatio: "16/9", width: "100%" }}>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/PnycyKCg1Wk"
+            title="YouTube video player"
+            style={{ border: 0 }}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
       </>
     ),
   },
