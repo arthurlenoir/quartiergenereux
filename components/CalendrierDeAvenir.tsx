@@ -1238,7 +1238,69 @@ const content: CalendrierAvenir[] = [
         successions ?
       </p>
     ),
-    answer: <></>,
+    answer: (
+      <>
+        <p>
+          Les droits de succession fonctionnent par tranche comme l’impôt sur le
+          revenu. Les héritiers directs (les enfants) ne paient pas d’impôts sur
+          les premiers 100 000€ hérités. Il faut donc hériter de plus de 100
+          000€ avant de payer des droits de successions. Les droits de
+          succession sont déjà un impôt dirigé vers une minorité héritant de
+          grandes sommes.
+        </p>
+        <p>
+          T. Piketty a montré que les plus grandes fortunes accumulent une part
+          toujours plus importante des richesses mondiales et la conservent par
+          l&apos;héritage. Dit autrement, le gâteau des richesses mondiales est
+          de plus en plus capté par ces grandes fortunes quand le reste de la
+          planète se partage une part toujours plus faible.
+        </p>
+        <p>
+          Le problème, n&apos;est pas le montant des droits de succession, mais
+          l&apos;héritage en lui même. Il permet l’accumulation de richesse et
+          empêche toute possibilité de partage de ces richesses (dans les
+          services publics par exemple...) !
+        </p>
+        <p>
+          Pour une société plus égalitaire, l’héritage est un fardeau à
+          supprimer.
+        </p>
+        <p>Alors, prêt·es à supprimer l&apos;héritage sans limite ?</p>
+        <p>
+          Pour aller plus loin :
+          <ul>
+            <li>
+              <a
+                href="https://www.seuil.com/ouvrage/le-capital-au-xxie-siecle-thomas-piketty/9782021082289"
+                rel="noopener noreferrer"
+              >
+                Le Capital au XXIe siècle - Thomas Piketty
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.lemonde.fr/economie/video/2020/02/05/faut-il-supprimer-l-heritage-et-les-frais-de-succession_6028527_3234.html"
+                rel="noopener noreferrer"
+              >
+                Faut-il supprimer l’héritage ? - Par Asia Balluffier - Le Monde
+              </a>
+            </li>
+          </ul>
+        </p>
+        <div style={{ aspectRatio: "16/9", width: "100%" }}>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/a1538GVBxJ"
+            title="YouTube video player"
+            style={{ border: 0 }}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </>
+    ),
   },
   {
     question: (
@@ -1249,31 +1311,30 @@ const content: CalendrierAvenir[] = [
     ),
     answer: (
       <>
-        <p>34 % des ayant droits ne perçoivent pas le RSA.</p>
         <p>38 % des ayant droits ne perçoivent pas l’aide au logement.</p>
+        <p>34 % des ayant droits ne perçoivent pas le RSA.</p>
         <p>
           61 % des ayants droits avec une incapacité supérieure à 50 % ne
-          perçoivent par l’Allocation Adulte Handicapé (AAH).{" "}
+          perçoivent par l’Allocation Adulte Handicapé (AAH).
         </p>
         <p>
           85 % des ayants droits avec une incapacité supérieure à 50 % ne
-          perçoivent pas allocation éducation enfants handicapés.{" "}
+          perçoivent pas allocation éducation enfants handicapés.
         </p>
-
         <p>
           À quoi bon mettre en place des aides sociales quand elles sont souvent
           non réclamées par les ayant droits et stigmatisées par le personnel
           politique ?
         </p>
         <p>
-          D’autres solutions existent, par exemple, certain·es prônent le revenu
+          D’autres solutions existent, par exemple, certain.es prônent le revenu
           universel, qui consiste à verser la même somme à chacun et chacune
           sans condition de ressources
         </p>
         <p>
           Encore plus ambitieux – et plus juste -, d’autres proposent d’étendre
           ce dispositif à un véritable salaire à vie, qui dépendrait de
-          qualification ou des besoins de chacun.{" "}
+          qualification ou des besoins de chacun.
         </p>
         <p>
           À quand la désaliénation du travail et le salaire à vie pour une
@@ -1307,17 +1368,45 @@ const content: CalendrierAvenir[] = [
         <p>
           La civilisation andine de Caral avait une organisation marquée par une
           horizontalité sociale. Les récoltes étaient réparties en fonction des
-          besoins. Les genres étaient traités sur un pied d&apos;égalité.
+          besoins. Les genres étaient traités sur un pied d&apos;égalité. Plutôt
+          bien réelle pour une utopie ?
         </p>
-
-        <p>Plutôt bien réelle pour une utopie ?</p>
         <p>
           Au 21ème, on ne cesse de nous rappeler que nous sommes des doux et
           douces rêveurs et rêveuses de vouloir plus de droits, plus de justices
           sociales et plus d’égalités. Pourtant, ces rêves ne sont brimés que
           par la peur des privilégiés de perdre leurs privilèges.
         </p>
-        <p>Alors qu’est-ce qu’on attend pour faire la révolution ?</p>
+        <p>
+          L’évolution de l’humanité n’est pas vouée à la violence, à la
+          croissance économique, à la soumission. Soyons utopistes et allions
+          nos forces pour atteindre cette utopie et sortir de l’invasion des
+          idées fascistes.
+        </p>
+        <p>Alors qu’est-ce qu’on attend pour passer du rêve à la réalité ?</p>
+        <p>
+          Pour aller plus loin :
+          <ul>
+            <li>
+              <a
+                href="https://www.arteradio.com/emission/et-parfois-on-gagne"
+                rel="noopener noreferrer"
+              >
+                Et parfois, on gagne - Un documentaire de Victoire Tuaillon,
+                Claire Richard & Bertrand Guillot
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://fr.wikipedia.org/wiki/Andor_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)"
+                rel="noopener noreferrer"
+              >
+                Petit manuel de révolution : La Série Andor - Star Wars - Disney
+                (oui oui)
+              </a>
+            </li>
+          </ul>
+        </p>
       </>
     ),
   },
@@ -1379,11 +1468,31 @@ const content: CalendrierAvenir[] = [
           <ul>
             <li>
               <a
-                href="https://www.arteradio.com/emission/et-parfois-on-gagne"
+                href="https://www.casterman.com/Bande-dessinee/Catalogue/la-bataille-culturelle/9782203296558"
                 rel="noopener noreferrer"
               >
-                « Et parfois, on gagne » - Un documentaire de Victoire Tuaillon,
-                Claire Richard &amp; Bertrand Guillot
+                La Bataille culturelle - Blanche Sabbah
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.editionslesliensquiliberent.fr/livre-Parasites-720-1-1-0-1.html"
+                rel="noopener noreferrer"
+              >
+                Parasites - Nicolas Framont
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.payot-rivages.fr/payot/livre/r%C3%A9sister-9782228937597"
+                rel="noopener noreferrer"
+              >
+                Résister - Salomé Saqué
+              </a>
+            </li>
+            <li>
+              <a href="" rel="noopener noreferrer">
+                Tous les médias indépendants que tu peux soutenir 😉
               </a>
             </li>
           </ul>
