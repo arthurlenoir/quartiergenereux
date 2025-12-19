@@ -1126,7 +1126,110 @@ const content: CalendrierAvenir[] = [
         <span className={style.whatIf}>Et si</span> on prenait soin des autres ?
       </p>
     ),
-    answer: <></>,
+    answer: (
+      <>
+        <p>
+          Génocides en cours, actes de haine qui prospèrent, multiplications de
+          répressions violentes, exploitations des êtres humain.es, guerres...
+          L’humanité se déchire au profit de quelques-uns qui accaparent les
+          richesses en se moquant du sort de leurs semblables.
+        </p>
+        <p>
+          La violence est partout, tout le temps, qu’elle soit physique,
+          verbale, psychique ou symbolique. Cette violence symbolique
+          caractérisé par les injustices sociales et le mépris de celleux qui
+          ont le pouvoir doit être combattue.
+        </p>
+        <p>
+          Nos propres privilèges et les mécanismes de domination qui nous
+          traversent doivent aussi être combattus. La révolution sera
+          convergente et intersectionnelle.
+        </p>
+        <p>
+          Notre société est excluante : raciste, hétérocentrée, validiste,
+          psychophobe, transphobe, âgiste, homophobe, grossophobe…Faisons
+          l’effort de compréhension et n’ignorons pas nos propres dominations et
+          ses mécanismes en jeu. N’attendons pas que les personnes concernées
+          nous éduquent. Agissons !
+        </p>
+        <p>
+          Prendre soin des autres est loin d’être naïf : l’empathie, la joie et
+          la fin des rapports de domination est un véritable programme
+          politique.
+        </p>
+        <p>Cher·es adelphes, prenez soin de vous, prenez soin des autres.</p>
+        <p>Battons-nous toustes ensemble, </p>
+        <p>Dansons toustes ensemble. </p>
+        <p>Bisous. </p>
+        <p>
+          Pour aller plus loin :
+          <ul>
+            <li>
+              <a
+                href="https://boutique.binge.audio/products/politiser-le-bien-etre-camille-teste"
+                rel="noopener noreferrer"
+              >
+                Politiser le bien-être - Camille Teste
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://boutique.binge.audio/products/mecanique-du-privilege-blanc-estelle-depris"
+                rel="noopener noreferrer"
+              >
+                Mécanique du privilège blanc - Estelle Depris
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.seuil.com/ouvrage/ascendant-beauf-rose-lamy/9782021596069"
+                rel="noopener noreferrer"
+              >
+                Ascendant beauf - Rose Lamy
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.arteradio.com/son/nous_sommes_intersexes"
+                rel="noopener noreferrer"
+              >
+                Nous sommes intersexes - Charlotte Bienaimé - Arte Radio
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.binge.audio/podcast/kiffetarace/"
+                rel="noopener noreferrer"
+              >
+                Kiffe ta race - Rokhaya Diallo et Grace Ly
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://boutique.binge.audio/products/proteger-nos-enfants-gabrielle-richard"
+                rel="noopener noreferrer"
+              >
+                Protéger nos enfants - Gabrielle Richard
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://revueladeferlante.fr/la-fin-des-monstres/"
+                rel="noopener noreferrer"
+              >
+                La fin des monstres, Tal Madesta
+              </a>
+            </li>
+            <li>
+              … et toutes ressources que vous pourrez trouver sur les rapports
+              de domination. De nombreux.ses auteur.ices, podcasteur.ices,
+              sociologues et surtout personnes concernées documentent les
+              discriminations quotidiennes
+            </li>
+          </ul>
+        </p>
+      </>
+    ),
   },
   {
     question: (
