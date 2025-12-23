@@ -1418,7 +1418,34 @@ const content: CalendrierAvenir[] = [
     ),
     answer: (
       <>
-        <p></p>
+        <p>
+          Il faut une sacrée dose d’ego pour se présenter à une élection, pour
+          soumettre son destin au jugement de plusieurs milliers ou millions de
+          personnes, pour prendre des décisions au nom d’une commune, d’un
+          département, d’une région, d’un pays entier.{" "}
+        </p>
+        <p>
+          La démocratie représentative est contraire à la République. Res
+          publica : la chose publique est aujourd’hui confisquée par des
+          professionnel·le·s de la politique. Iels ne nous connaissent pas,
+          méprisent nos avis, sont très éloigné.es de nos difficultés du
+          quotidien.
+        </p>
+        <p>
+          Voter sans candidat.e implique de pas laisser des élu·e·s de décider
+          et de faire à notre place. Donnons-nous le droit de déterminer
+          collectivement notre avenir !
+        </p>
+        <p>
+          Les instances de décisions doivent être ouvertes et accessibles à
+          toustes, quelle que soit ta position sociale et tes études. C’est aux
+          citoyen.nes de reprendre le pouvoir pour ne pas le subir. D’ailleurs,
+          de nombreuses listes municipalistes se créent partout en France.{" "}
+        </p>
+        <p>
+          Alors, prêt·e·s à prendre la société en main et à t’investir en
+          politique ?
+        </p>
       </>
     ),
   },
