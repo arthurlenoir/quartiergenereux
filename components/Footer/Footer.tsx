@@ -96,7 +96,7 @@ export const Footer: React.FC = () => {
             >
               <span className={styles.scheduleDay}>samedi</span>
               <span className={styles.scheduleSep} />
-              <span className={styles.scheduleHours}>18h - 23h</span>
+              <span className={styles.scheduleHours}>16h - 23h</span>
             </li>
             <li
               className={`${styles.schedule} ${
