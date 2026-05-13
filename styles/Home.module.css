@@ -27,3 +27,12 @@
   line-height: 1.5;
   font-size: 1.5rem;
 }
+
+.pageContent {
+  max-width: 65ch;
+  margin: 0 auto;
+}
+
+.pageContent ul li {
+  margin: 0 0 12px;
+}

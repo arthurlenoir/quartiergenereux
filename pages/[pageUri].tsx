@@ -65,7 +65,10 @@ export default function PageView({ isHomePage, ...props }: PageProps) {
                 dangerouslySetInnerHTML={{ __html: page.title }}
               />
             )}
-            <div dangerouslySetInnerHTML={{ __html: page.content }} />
+            <div
+              className={styles.pageContent}
+              dangerouslySetInnerHTML={{ __html: page.content }}
+            />
           </>
         )}
       </Root>
