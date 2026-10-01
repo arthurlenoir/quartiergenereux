@@ -8,11 +8,10 @@ import { useScrollPercent } from "./hooks";
 import styles from "./Root.module.css";
 import { ChevronDown } from "../Icons/ChevronDown";
 
-interface Props
-  extends React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement
-  > {
+interface Props extends React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+> {
   children: ReactNode;
   menu: Menu | null;
 }
@@ -33,12 +32,12 @@ export const Root: React.FC<Props> = ({
   const { asPath } = useRouter();
   const scrollPercent = useScrollPercent(
     scrollToFullyReduceHeader,
-    SCROLL_THRESHOLD
+    SCROLL_THRESHOLD,
   );
 
   const toggleMenu = useCallback(
     () => setOpenMenu((value) => !value),
-    [setOpenMenu]
+    [setOpenMenu],
   );
 
   const renderMenuItems = useCallback(
@@ -72,7 +71,7 @@ export const Root: React.FC<Props> = ({
         </li>
       );
     },
-    [asPath]
+    [asPath],
   );
 
   return (
@@ -127,6 +126,21 @@ export const Root: React.FC<Props> = ({
                     <TelegramIcon height={28 * (1 - scrollPercent)} />
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="https://www.helloasso.com/associations/le-quartier-genereux/formulaires/1"
+                    aria-label="Je fais un don au Quartier Généreux"
+                    rel="noreferrer"
+                    target="_blank"
+                    className={styles.headerCallToAction}
+                    style={{
+                      fontSize: `${18 * (1 - scrollPercent)}px`,
+                      padding: `${8 * (1 - scrollPercent)}px 24px`,
+                    }}
+                  >
+                    Je fais un don
+                  </a>
+                </li>
               </ul>
             </nav>
             <nav className={styles.mainMenu}>
@@ -141,6 +155,52 @@ export const Root: React.FC<Props> = ({
       ></div>
       <nav className={`${styles.mobileMenu} ${openMenu ? styles.open : ""}`}>
         <ul>{menu?.menuItems && menu.menuItems.map(renderMenuItems)}</ul>
+        <ul>
+          <li>
+            <a
+              href="https://www.helloasso.com/associations/le-quartier-genereux/formulaires/1"
+              aria-label="Je fais un don au Quartier Généreux"
+              rel="noreferrer"
+              target="_blank"
+              className={styles.headerCallToAction}
+            >
+              Je fais un don
+            </a>
+          </li>
+        </ul>
+        <div className={styles.menuSpacer} />
+        <ul className={styles.mobileSocialNetworks}>
+          <li>
+            <a
+              href="https://www.facebook.com/qg.montpellier"
+              aria-label="suivez nous sur Facebook"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FacebookIcon height={28} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/qg.montpellier"
+              aria-label="suivez nous sur Instagram"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <InstagramIcon height={28} />
+            </a>
+          </li>
+          <li>
+            <a
+              href=" https://t.me/+eLtdeKh7OwJjN2I0"
+              aria-label="suivez nous sur Telegram"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <TelegramIcon height={28} />
+            </a>
+          </li>
+        </ul>
       </nav>
       <main className={styles.main}>{children}</main>
     </div>

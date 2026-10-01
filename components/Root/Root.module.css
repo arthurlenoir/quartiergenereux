@@ -107,7 +107,7 @@
   height: 0;
   overflow: hidden;
   transition: height ease-in-out 200ms;
-  padding: 16px 4px 4px;
+  padding: 0 4px 0;
 }
 
 .mainMenu ul li .subMenu ul {
@@ -122,6 +122,7 @@
 }
 .mainMenu ul li:hover .subMenu {
   height: auto;
+  padding: 16px 4px 4px;
 }
 
 .mainMenu ul li .subMenu li {
@@ -173,6 +174,45 @@
   display: none;
 }
 
+.headerCallToAction,
+a.headerCallToAction,
+a.headerCallToAction:visited {
+  background-color: var(--tertiary);
+  color: white;
+  font-weight: bold;
+  padding: 8px 24px;
+  box-sizing: border-box;
+  font-size: 18px;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0;
+  width: auto;
+}
+
+.menuSpacer {
+  flex: 1 1 auto;
+}
+
+.mobileMenu ul.mobileSocialNetworks {
+  display: flex;
+  margin: 0;
+  padding: 8px 16px;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 16px;
+}
+.mobileMenu ul.mobileSocialNetworks li {
+  display: block;
+}
+.mobileMenu ul.mobileSocialNetworks li a {
+  display: block;
+  padding: 0;
+}
+.mobileMenu ul.mobileSocialNetworks li a > svg {
+  display: block;
+}
+
 @media only screen and (max-width: 800px) {
   .logo {
     background-position: center center;
@@ -192,7 +232,9 @@
     background-color: white;
     box-sizing: border-box;
     padding: 40px 0;
-    transition: box-shadow 200ms ease-in-out, right 200ms ease-in-out;
+    transition:
+      box-shadow 200ms ease-in-out,
+      right 200ms ease-in-out;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
   .mobileMenu.open {
@@ -219,7 +261,9 @@
     background-color: #15141a;
     box-shadow: 0 -7px 0 0 #15141a;
     border-radius: 2px;
-    transition: transform ease-in-out 200ms, box-shadow ease-in-out 200ms;
+    transition:
+      transform ease-in-out 200ms,
+      box-shadow ease-in-out 200ms;
   }
   .mobileMenuToggle::after {
     content: "";
@@ -229,7 +273,9 @@
     margin-top: 4px;
     background-color: #15141a;
     border-radius: 2px;
-    transition: transform ease-in-out 200ms, margin-top ease-in-out 200ms;
+    transition:
+      transform ease-in-out 200ms,
+      margin-top ease-in-out 200ms;
   }
   .mobileMenuToggle.open::before {
     transform: rotate(45deg);
