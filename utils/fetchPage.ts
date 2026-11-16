@@ -1,13 +1,13 @@
 import { parseMenus } from "../types/menu";
 
 export const fetchPage = async (pageUri: string) => {
-    const res = await fetch('http://quartiu.cluster031.hosting.ovh.net/graphql', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            query: `
+  const res = await fetch("http://quartiu.cluster031.hosting.ovh.net/graphql", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      query: `
         {
           generalSettings {
               url, title, description
@@ -53,17 +53,52 @@ export const fetchPage = async (pageUri: string) => {
             }
             ... on Post {
               id
+              slug
+              status
+              title(format: RENDERED)
+              uri
+              content(format: RENDERED)
+              date
+              modified
+              excerpt(format: RENDERED)
+              featuredImage {
+                node {
+                  altText
+                  caption
+                  description(format: RENDERED)
+                  mediaItemUrl
+                  mediaType
+                }
+              }
+              categories {
+                nodes {
+                  id
+                  name
+                  slug
+                  uri
+                }
+              }
+              tags {
+                nodes {
+                  id
+                  name
+                  slug
+                  uri
+                }
+              }
             }
           }
         }
     `,
-        }),
-    })
-    const { data: {
-        generalSettings: { title, description },
-        page,
-        menus: { nodes: wpMenus }
-    } } = await res.json();
-    const menu = wpMenus.length > 0 ? parseMenus(wpMenus[0]) : null;
-    return { title, description, menu, page: page };
-}
+    }),
+  });
+  const {
+    data: {
+      generalSettings: { title, description },
+      page,
+      menus: { nodes: wpMenus },
+    },
+  } = await res.json();
+  const menu = wpMenus.length > 0 ? parseMenus(wpMenus[0]) : null;
+  return { title, description, menu, page: page };
+};
