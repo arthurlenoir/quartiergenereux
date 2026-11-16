@@ -25,7 +25,6 @@ export default function PageView({ isHomePage, ...props }: PageProps) {
   const { pageUri } = router.query;
   const [{ title, description, menu, page }, setState] =
     useState<PageProps>(props);
-  console.log("page", page);
   useEffect(() => {
     if (!props.title || !props.page) {
       fetchPage(pageUri as string).then((r) => setState(r));
@@ -95,16 +94,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
         {
           pages(where: {status: PUBLISH}) {
             nodes {
-              content(format: RENDERED)
-              date
-              dateGmt
-              desiredSlug
-              id
-              isFrontPage
-              isPostsPage
               slug
-              status
-              title(format: RENDERED)
               uri
             }
           }
