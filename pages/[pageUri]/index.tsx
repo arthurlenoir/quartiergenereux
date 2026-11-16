@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { Footer } from "../../components/Footer";
 import { HomePageHeader } from "../../components/HomePageHeader";
 import { Root } from "../../components/Root";
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 import { Menu } from "../../types/menu";
 import { Page } from "../../types/page";
 import { fetchPage } from "../../utils/fetchPage";
