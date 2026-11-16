@@ -1,7 +1,7 @@
 import { parseMenus } from "../types/menu";
 
 export const fetchPage = async (pageUri: string) => {
-  const res = await fetch("http://quartiu.cluster031.hosting.ovh.net/graphql", {
+  const res = await fetch("https://wp.quartiergenereux.fr/graphql", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
