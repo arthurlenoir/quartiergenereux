@@ -114,8 +114,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const posts = json.data.posts.nodes as Page[];
   return {
     paths: [
-      ...pages.map((page) => ({ params: { pageUri: `${page.slug}/`, fallback: 'blocking' } })),
-      ...posts.map((page) => ({ params: { pageUri: `${page.slug}/`, fallback: 'blocking' } })),
+      ...pages.map((page) => ({ params: { pageUri: page.slug, fallback: 'blocking' } })),
+      ...posts.map((page) => ({ params: { pageUri: page.slug, fallback: 'blocking' } })),
     ],
     fallback: true,
   };
