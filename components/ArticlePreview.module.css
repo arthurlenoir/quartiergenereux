@@ -1,0 +1,40 @@
+.container {
+  margin-bottom: 48px;
+}
+
+a.articlePreview,
+a.articlePreview:visited {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+a.articlePreview figure {
+  flex: 0 0 230px;
+  height: 180px;
+  background-size: cover;
+  background-position: center center;
+}
+
+a.articlePreview figure img {
+  width: 100%;
+}
+
+.button {
+  background: none;
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 400;
+  padding: 2px 4px;
+  font-size: 16px;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 auto;
+  border: none;
+  outline: 0;
+  width: auto;
+}

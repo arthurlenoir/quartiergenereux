@@ -14,8 +14,7 @@ on:
 
   # Allows to trigger the run from webhook call
   repository_dispatch:
-    types: 
-      - wordpress-update
+    types: [wordpress-update]
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:

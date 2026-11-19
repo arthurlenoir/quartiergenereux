@@ -1,6 +1,6 @@
 import { parseMenus } from "../types/menu";
 
-export const fetchPage = async (pageUri: string) => {
+export const fetchPage = async (pageUri: string, withHomePost?: boolean) => {
   const res = await fetch("https://wp.quartiergenereux.fr/graphql", {
     method: "POST",
     headers: {
@@ -29,6 +29,40 @@ export const fetchPage = async (pageUri: string) => {
               }
             }
           }
+          ${
+            withHomePost
+              ? `posts(
+            first: 1
+            where: {
+              status: PUBLISH
+              tagSlugIn: ["home"]
+              orderby: [
+                {
+                  field: DATE
+                  order: DESC
+                }
+              ]
+            }
+          ) {
+            nodes {
+              id
+              slug
+              uri
+              title(format: RENDERED)
+              date
+              excerpt(format: RENDERED)
+              content(format: RENDERED)
+              featuredImage {
+                node {
+                  altText
+                  mediaItemUrl
+                  caption
+                }
+              }
+            }
+          }`
+              : ""
+          } 
           page: nodeByUri(uri: "${pageUri}") {
             id
             isContentNode
@@ -96,9 +130,16 @@ export const fetchPage = async (pageUri: string) => {
     data: {
       generalSettings: { title, description },
       page,
+      posts,
       menus: { nodes: wpMenus },
     },
   } = await res.json();
   const menu = wpMenus.length > 0 ? parseMenus(wpMenus[0]) : null;
-  return { title, description, menu, page: page };
+  return {
+    title,
+    description,
+    menu,
+    page: page,
+    lastPost: withHomePost && posts && posts.nodes.length > 0 ? posts.nodes[0] : null,
+  };
 };

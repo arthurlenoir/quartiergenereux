@@ -2,6 +2,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { ArticlePreview } from "../components/ArticlePreview";
 import { Footer } from "../components/Footer";
 import { HomePageHeader } from "../components/HomePageHeader";
 import { Root } from "../components/Root";
@@ -16,6 +17,7 @@ export interface PageProps {
   title: string;
   description: string;
   page: Page;
+  lastPost?: Page;
   menu: Menu | null;
   isHomePage?: boolean;
 }
@@ -23,11 +25,13 @@ export interface PageProps {
 export default function PageView({ isHomePage, ...props }: PageProps) {
   const router = useRouter();
   const { pageUri } = router.query;
-  const [{ title, description, menu, page }, setState] =
+  const [{ title, description, menu, page, lastPost }, setState] =
     useState<PageProps>(props);
+  console.log(isHomePage, props.lastPost, lastPost);
   useEffect(() => {
     if (!props.title || !props.page) {
-      fetchPage(pageUri as string).then((r) => setState(r));
+      console.log(pageUri, pageUri === "/");
+      fetchPage(pageUri as string, pageUri === "/").then((r) => setState(r));
     }
   }, [props.title, props.page, pageUri, setState]);
 
@@ -52,6 +56,7 @@ export default function PageView({ isHomePage, ...props }: PageProps) {
       </Head>
       <Root menu={menu}>
         {isHomePage && <HomePageHeader />}
+        {isHomePage && lastPost && <ArticlePreview article={lastPost} />}
         {isHomePage && <PetitionTerrasse />}
 
         {isHomePage && (
