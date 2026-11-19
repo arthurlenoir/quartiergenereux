@@ -10,17 +10,23 @@ a.articlePreview:visited {
   text-decoration: none;
   color: inherit;
   outline: none;
+  gap: 24px;
 }
 
 a.articlePreview figure {
   flex: 0 0 230px;
   height: 180px;
+  margin: 0;
   background-size: cover;
   background-position: center center;
 }
 
 a.articlePreview figure img {
   width: 100%;
+}
+
+a.articlePreview h3 {
+  margin-top: 0;
 }
 
 .button {
@@ -37,4 +43,13 @@ a.articlePreview figure img {
   border: none;
   outline: 0;
   width: auto;
+}
+
+@media (max-width: 600px) {
+  a.articlePreview,
+  a.articlePreview:visited {
+    flex-direction: column;
+  }
+  a.articlePreview figure {
+  }
 }
